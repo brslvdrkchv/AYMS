@@ -60,9 +60,12 @@ html {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
-body.desktop-view {
+body, body.desktop-view {
   background-color: var(--bg-deep);
   background-image: 
     radial-gradient(ellipse at 50% 0%, rgba(67, 106, 238, 0.15) 0%, transparent 60%),
@@ -79,6 +82,8 @@ body.desktop-view {
   overflow-x: hidden;
   color: var(--text-primary);
   min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
   position: relative;
 }
 
@@ -323,13 +328,14 @@ body.desktop-view {
 .vh-section {
   min-height: 100vh;
   width: 100%;
+  max-width: 100vw;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 100px 48px;
   box-sizing: border-box;
-  overflow: visible;
+  overflow: hidden;
   background-color: var(--bg-deep);
 }
 
@@ -1905,21 +1911,67 @@ body.desktop-view {
 }
 
 @media (max-width: 992px) {
+  ::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+  }
+
   /* Fluid Sections (Never cut off content on small screens) */
   .vh-section {
     height: auto !important;
     min-height: auto !important;
-    padding: 100px 0 65px !important;
-    overflow: visible !important;
+    padding: 85px 20px 55px !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
   }
 
   .section-hero {
     min-height: 100vh !important;
-    padding-top: 120px !important;
+    padding-top: 110px !important;
     padding-bottom: 60px !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden !important;
+  }
+
+  .desktop-container,
+  .section-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Celestial Glow & Spheres clamping to prevent any horizontal zoom */
+  .hero-celestial-sphere,
+  .footer-blue-sphere-arc {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+
+  .hero-cosmic-glow,
+  .facts-cosmic-sphere,
+  .why-cosmic-glow {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+
+  .hero-lens-flare-img,
+  .facts-lens-flare-img,
+  .stages-lens-flare-img {
+    max-width: 100vw !important;
+  }
+
+  .hero-circuit-left,
+  .hero-circuit-right {
+    display: none !important;
   }
 
   /* Mobile Navigation Menu */
@@ -1929,7 +1981,7 @@ body.desktop-view {
 
   .nav-links {
     position: fixed;
-    top: 76px;
+    top: 70px;
     left: 0;
     width: 100%;
     background: rgba(4, 7, 16, 0.97);
@@ -1937,8 +1989,8 @@ body.desktop-view {
     -webkit-backdrop-filter: blur(24px);
     border-bottom: 1px solid var(--border-glass);
     flex-direction: column;
-    padding: 28px 24px 32px;
-    gap: 16px;
+    padding: 24px 20px 28px;
+    gap: 14px;
     align-items: flex-start;
     transform: translateY(-130%);
     opacity: 0;
@@ -1975,7 +2027,7 @@ body.desktop-view {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .footer-safety-grid {
+  .logistics-dual-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
@@ -1997,14 +2049,18 @@ body.desktop-view {
   .why-wave-ribbon-3d,
   .facts-wave-ribbon-3d,
   .sections-wave-ribbon-3d {
-    opacity: 0.35;
-    max-width: 80%;
+    opacity: 0.3;
+    max-width: 100vw;
+    width: 100%;
   }
 
   .stages-glass-chain-3d {
-    opacity: 0.45;
+    opacity: 0.4;
     width: 100%;
+    max-width: 100vw;
     bottom: 0;
+    left: 0;
+    transform: none;
   }
 }
 
@@ -2044,12 +2100,13 @@ body.desktop-view {
   }
 
   .hero-title-ayms {
-    font-size: clamp(52px, 16vw, 88px);
+    font-size: clamp(42px, 14vw, 84px);
+    word-break: break-word;
   }
 
   .hero-title-year {
-    font-size: clamp(38px, 12vw, 68px);
-    letter-spacing: 6px;
+    font-size: clamp(32px, 10vw, 64px);
+    letter-spacing: 4px;
     margin-top: -2px;
   }
 
@@ -2072,51 +2129,71 @@ body.desktop-view {
     text-align: center;
   }
 
-  .hero-cta-buttons {
+  .hero-cta-group {
     flex-direction: column;
     width: 100%;
-    max-width: 320px;
+    max-width: 340px;
     margin: 0 auto;
     gap: 12px;
   }
 
-  .hero-primary-btn,
-  .hero-secondary-btn {
+  .btn-hero-cta,
+  .btn-hero-secondary {
     width: 100%;
     text-align: center;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 14px 20px;
+    font-size: 14px;
   }
 
   /* About Section */
-  .about-coat-of-arms-box {
-    max-width: 220px;
-    margin: 0 auto 20px;
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
   }
 
-  .about-stats-row {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+  .emblem-card-glow {
+    max-width: 200px !important;
+    margin: 0 auto 18px !important;
   }
 
-  .stat-glass-badge {
-    padding: 14px 8px;
-    border-radius: 16px;
+  .about-monogram-img {
+    max-width: 160px !important;
   }
 
-  .stat-num {
-    font-size: 22px;
+  .milestones-row {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
   }
 
-  .stat-label {
-    font-size: 10px;
-    line-height: 1.3;
+  .milestone-card {
+    padding: 12px 6px !important;
+    border-radius: 14px !important;
+    text-align: center !important;
   }
 
-  .about-letter-paper {
-    padding: 24px 18px;
-    border-radius: 20px;
-    font-size: 14px;
-    line-height: 1.6;
+  .milestone-num {
+    font-size: 22px !important;
+  }
+
+  .milestone-text {
+    font-size: 10px !important;
+    line-height: 1.25 !important;
+  }
+
+  .about-greeting-title {
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .about-full-letter {
+    padding: 22px 18px !important;
+    border-radius: 18px !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
   }
 
   /* Organizers */
@@ -2240,21 +2317,27 @@ body.desktop-view {
     font-size: 24px;
   }
 
-  .about-stats-row {
-    grid-template-columns: 1fr;
-    gap: 10px;
+  .milestones-row {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
   }
 
-  .stat-glass-badge {
-    padding: 12px 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  .milestone-card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 12px 16px !important;
+    text-align: left !important;
   }
 
-  .stat-num {
-    margin-bottom: 0;
+  .milestone-num {
+    margin-bottom: 0 !important;
+    font-size: 20px !important;
+  }
+
+  .milestone-text {
+    font-size: 11px !important;
   }
 
   .modal-dialog {
@@ -2271,375 +2354,26 @@ body.desktop-view {
 
 
 /* ==========================================================================
-   ADAPTIVE EXPERIENCE SWITCHER (ZERO BUTTONS - AUTOMATIC VIEWPORT SWITCH)
-   ========================================================================== */
-@media (min-width: 992px) {
-  .mobile-experience {
-    display: none !important;
-  }
-  .desktop-experience {
-    display: block !important;
-  }
-}
-
-@media (max-width: 991px) {
-  .desktop-experience {
-    display: none !important;
-  }
-  .mobile-experience {
-    display: block !important;
-  }
-}
-
-/* ==========================================================================
-   MOBILE 1:1 FIGMA ARTBOARD COMPONENT STYLES
-   ========================================================================== */
-/* ==========================================================================
-   AYMS Conf 2026 — 1:1 Pixel-Perfect Figma Production Stylesheet
-   Design Canvas: 1920px × 19524px (8 Seamless Skia-Rendered Slices)
-   ========================================================================== */
-
-/* --- CSS Reset & Variables --- */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --primary-accent: #FF5800;
-  --secondary-accent: #436AEE;
-  --cyan-accent: #91E0FD;
-  --purple-accent: #DBBBF6;
-  --bg-dark: #000000;
-  --text-main: #FFFFFF;
-}
-
-html {
-  scroll-behavior: smooth;
-  background-color: var(--bg-dark);
-  color: var(--text-main);
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  background-color: var(--bg-dark);
-  overflow-x: hidden;
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-}
-
-/* Custom Sleek Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #050508;
-}
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #436AEE, #FF5800);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #FF5800;
-}
-
-/* --- Main 1:1 Layout Canvas Container --- */
-.site-container {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  position: relative;
-  background-color: var(--bg-dark);
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.9);
-}
-
-/* --- Section Slice Wrapper (Zero-gap seamless flow) --- */
-.figma-section {
-  position: relative;
-  width: 100%;
-  display: block;
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-  font-size: 0;
-  overflow: visible;
-}
-
-.figma-section .section-bg {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  pointer-events: auto;
-  image-rendering: -webkit-optimize-contrast;
-}
-
-/* --- Visually Hidden / Accessible Semantic Layer (SEO & Screen Readers) --- */
-.sr-only {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-/* ==========================================================================
-   INTERACTIVE HOTSPOTS LAYER
-   Percentages match the 1920px Figma design down to the subpixel.
-   ========================================================================== */
-
-.hotspot {
-  position: absolute;
-  display: block;
-  cursor: pointer;
-  text-decoration: none;
-  background: transparent;
-  border: none;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  z-index: 25;
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1),
-              background-color 0.2s ease;
-}
-
-.hotspot:focus-visible {
-  outline: 2px solid var(--cyan-accent);
-  outline-offset: 4px;
-}
-
-/* --- Hero Section Hotspots (Section 1: H = 1080px) --- */
-.hotspot-logo {
-  left: 4.323%;
-  top: 2.778%;
-  width: 5.208%;
-  height: 7.407%;
-  border-radius: 12px;
-}
-.hotspot-logo:hover {
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 20px rgba(67, 106, 238, 0.5);
-  transform: scale(1.05);
-}
-
-.hotspot-nav-about {
-  left: 26.042%;
-  top: 4.167%;
-  width: 11.979%;
-  height: 6.019%;
-  border-radius: 20px;
-}
-.hotspot-nav-sections {
-  left: 41.667%;
-  top: 4.167%;
-  width: 7.812%;
-  height: 6.019%;
-  border-radius: 20px;
-}
-.hotspot-nav-stages {
-  left: 53.125%;
-  top: 4.167%;
-  width: 13.542%;
-  height: 6.019%;
-  border-radius: 20px;
-}
-.hotspot-nav-register {
-  left: 72.656%;
-  top: 4.167%;
-  width: 22.396%;
-  height: 6.019%;
-  border-radius: 25px;
-}
-
-.hotspot-nav-about:hover,
-.hotspot-nav-sections:hover,
-.hotspot-nav-stages:hover {
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 16px rgba(145, 224, 253, 0.35);
-  transform: translateY(-2px);
-}
-
-.hotspot-nav-register:hover {
-  background: rgba(67, 106, 238, 0.15);
-  box-shadow: 0 0 25px rgba(145, 224, 253, 0.6), inset 0 0 15px rgba(219, 187, 246, 0.4);
-  transform: translateY(-2px) scale(1.02);
-}
-
-/* Tooltip helper on hover (subtle feedback) */
-.hotspot-tooltip {
-  display: none;
-}
-
-/* --- Section 7: Stages & Criteria Hotspot Cards (H = 4217px) --- */
-/* Matches Figma Rectangle 316, 330, 331 (600x300px cards, radius: 30px) */
-.criteria-hotspots-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.hotspot-theses {
-  pointer-events: auto;
-  left: 3.125%;
-  top: 73.868%;
-  width: 31.250%;
-  height: 7.114%;
-  border-radius: 30px;
-}
-
-.hotspot-sample {
-  pointer-events: auto;
-  left: 34.375%;
-  top: 81.930%;
-  width: 31.250%;
-  height: 7.114%;
-  border-radius: 30px;
-}
-
-.hotspot-presentation {
-  pointer-events: auto;
-  left: 65.625%;
-  top: 89.993%;
-  width: 31.250%;
-  height: 7.114%;
-  border-radius: 30px;
-}
-
-.hotspot-theses:hover,
-.hotspot-sample:hover,
-.hotspot-presentation:hover {
-  background: rgba(255, 88, 0, 0.08);
-  box-shadow: 0 0 30px rgba(255, 88, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 88, 0, 0.6);
-  transform: translateY(-4px) scale(1.01);
-}
-
-/* --- Section 8: Footer Navigation & Contact Hotspots (H = 2915px) --- */
-.footer-hotspots-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.footer-hotspots-overlay .hotspot {
-  pointer-events: auto;
-}
-
-.hotspot-footer-about {
-  left: 52.812%;
-  top: 80.137%;
-  width: 9.375%;
-  height: 1.715%;
-  border-radius: 8px;
-}
-.hotspot-footer-sections {
-  left: 52.812%;
-  top: 82.539%;
-  width: 7.292%;
-  height: 1.715%;
-  border-radius: 8px;
-}
-.hotspot-footer-stages {
-  left: 52.812%;
-  top: 84.768%;
-  width: 12.500%;
-  height: 1.715%;
-  border-radius: 8px;
-}
-
-.hotspot-footer-about:hover,
-.hotspot-footer-sections:hover,
-.hotspot-footer-stages:hover {
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
-  transform: translateX(4px);
-}
-
-.hotspot-footer-email {
-  left: 69.740%;
-  top: 81.681%;
-  width: 14.583%;
-  height: 1.715%;
-  border-radius: 8px;
-}
-.hotspot-footer-phone {
-  left: 69.740%;
-  top: 85.455%;
-  width: 18.750%;
-  height: 1.715%;
-  border-radius: 8px;
-}
-.hotspot-footer-tg-admin {
-  left: 69.740%;
-  top: 89.400%;
-  width: 12.500%;
-  height: 1.715%;
-  border-radius: 8px;
-}
-.hotspot-footer-tg-channel {
-  left: 69.740%;
-  top: 93.276%;
-  width: 13.542%;
-  height: 1.715%;
-  border-radius: 8px;
-}
-
-.hotspot-footer-email:hover,
-.hotspot-footer-phone:hover,
-.hotspot-footer-tg-admin:hover,
-.hotspot-footer-tg-channel:hover {
-  background: rgba(145, 224, 253, 0.15);
-  box-shadow: 0 0 16px rgba(145, 224, 253, 0.5);
-  transform: translateX(4px);
-}
-
-/* ==========================================================================
    FLOATING ACTION BUTTONS
    ========================================================================== */
 .floating-controls {
   position: fixed;
-  bottom: 32px;
-  right: 32px;
+  bottom: 24px;
+  right: 24px;
   z-index: 1000;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translateY(10px);
-}
-
-.floating-controls.visible {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
 }
 
 .floating-btn {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: rgba(20, 20, 30, 0.75);
+  background: rgba(10, 15, 30, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(145, 224, 253, 0.4);
   color: #FFFFFF;
   display: flex;
   align-items: center;
@@ -2651,137 +2385,7 @@ body {
 
 .floating-btn:hover {
   background: rgba(67, 106, 238, 0.85);
-  border-color: var(--cyan-accent);
-  box-shadow: 0 12px 36px rgba(67, 106, 238, 0.6), 0 0 25px var(--cyan-accent);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 12px 36px rgba(67, 106, 238, 0.6), 0 0 25px var(--accent-cyan);
   transform: translateY(-3px) scale(1.05);
-}
-
-/* ==========================================================================
-   MODAL WINDOW (CRITERIA & REGISTRATION DIALOGS)
-   ========================================================================== */
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2000;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  padding: 24px;
-}
-
-.modal-backdrop.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal-dialog {
-  background: #0D0F18;
-  border: 1px solid rgba(145, 224, 253, 0.3);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(67, 106, 238, 0.3);
-  border-radius: 24px;
-  width: 100%;
-  max-width: 680px;
-  max-height: 85vh;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-  transform: scale(0.92);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.modal-backdrop.active .modal-dialog {
-  transform: scale(1);
-}
-
-.modal-close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: transparent;
-  border: none;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 32px;
-  line-height: 1;
-  cursor: pointer;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.modal-close-btn:hover {
-  color: var(--primary-accent);
-  transform: rotate(90deg);
-}
-
-.modal-header {
-  padding: 32px 32px 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.modal-title {
-  font-size: 26px;
-  font-weight: 700;
-  color: #FFFFFF;
-  background: linear-gradient(90deg, #FFFFFF, var(--cyan-accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.modal-body {
-  padding: 28px 32px;
-  overflow-y: auto;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #D1D5DB;
-}
-
-.modal-body h4 {
-  font-size: 18px;
-  color: var(--cyan-accent);
-  margin-top: 16px;
-  margin-bottom: 8px;
-}
-
-.modal-body ul, .modal-body ol {
-  padding-left: 20px;
-  margin-bottom: 16px;
-}
-
-.modal-body li {
-  margin-bottom: 8px;
-}
-
-.modal-footer {
-  padding: 20px 32px 28px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-}
-
-.modal-action-btn {
-  background: linear-gradient(90deg, var(--secondary-accent), #2C3C94);
-  color: #FFFFFF;
-  border: 1px solid rgba(145, 224, 253, 0.4);
-  padding: 12px 28px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 12px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(67, 106, 238, 0.4);
-  transition: all 0.2s ease;
-}
-
-.modal-action-btn:hover {
-  background: linear-gradient(90deg, #577DFE, #436AEE);
-  box-shadow: 0 6px 20px rgba(67, 106, 238, 0.6);
-  transform: translateY(-2px);
 }
