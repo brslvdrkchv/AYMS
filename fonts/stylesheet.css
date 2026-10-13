@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Falcon Sport Two';
+    src: url('FalconSportTwo.eot');
+    src: local('Falcon Sport Two'), local('FalconSportTwo'),
+        url('FalconSportTwo.eot?#iefix') format('embedded-opentype'),
+        url('FalconSportTwo.woff2') format('woff2'),
+        url('FalconSportTwo.woff') format('woff'),
+        url('FalconSportTwo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Falcon Sport One';
+    src: url('FalconSportOne-Italic.eot');
+    src: local('Falcon Sport One Italic'), local('FalconSportOne-Italic'),
+        url('FalconSportOne-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FalconSportOne-Italic.woff2') format('woff2'),
+        url('FalconSportOne-Italic.woff') format('woff'),
+        url('FalconSportOne-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Falcon Sport One';
+    src: url('FalconSportOne.eot');
+    src: local('Falcon Sport One'), local('FalconSportOne'),
+        url('FalconSportOne.eot?#iefix') format('embedded-opentype'),
+        url('FalconSportOne.woff2') format('woff2'),
+        url('FalconSportOne.woff') format('woff'),
+        url('FalconSportOne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Falcon Sport Two';
+    src: url('FalconSportTwo-Italic.eot');
+    src: local('Falcon Sport Two Italic'), local('FalconSportTwo-Italic'),
+        url('FalconSportTwo-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FalconSportTwo-Italic.woff2') format('woff2'),
+        url('FalconSportTwo-Italic.woff') format('woff'),
+        url('FalconSportTwo-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

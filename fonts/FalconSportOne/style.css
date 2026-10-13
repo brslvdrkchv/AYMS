@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Falcon Sport';
+    src: local('Falcon Sport One'), local('Falcon-Sport-One'),
+        url('FalconSportOne.woff2') format('woff2'),
+        url('FalconSportOne.woff') format('woff'),
+        url('FalconSportOne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

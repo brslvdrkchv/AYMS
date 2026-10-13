@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AYMS Conf 2026 — Annual Young Medical Scientists' Conference</title>
+  <meta name="description" content="Офіційний десктоп-сайт Annual Young Medical Scientists’ Conference 2026. 185-річчя НМУ імені О.О. Богомольця та 145-річчя СНТ імені О.А. Киселя. 26-27 листопада 2026 року, Київ.">
+  <link rel="icon" type="image/svg+xml" href="images/figma_raw/vector_41_223.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="desktop-view">
+
+  <!-- ==================== FIXED DESKTOP NAVBAR ==================== -->
+  <header class="desktop-navbar" id="desktop-nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Головна AYMS 2026">
+        <img src="images/figma_raw/vector_41_223.svg" alt="AYMS" class="nav-logo-img">
+      </a>
+
+      <nav class="nav-links" aria-label="Головна навігація">
+        <a href="#about" class="nav-link">Про захід</a>
+        <a href="#organizers" class="nav-link">Організатори</a>
+        <a href="#why-join" class="nav-link">Переваги</a>
+        <a href="#facts" class="nav-link">Факти</a>
+        <a href="#sections" class="nav-link">Секції</a>
+        <a href="#stages" class="nav-link">Регламент</a>
+        <a href="#contacts" class="nav-link">Контакти</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="figma-gradient-btn nav-cta-btn" id="nav-btn-register">
+          <span>Зареєструватися</span>
+        </button>
+        <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Меню навігації" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN DESKTOP SECTIONS ==================== -->
+  <main class="desktop-main">
+
+    <!-- ==================== 1. HERO SECTION (100vh) ==================== -->
+    <section id="hero" class="vh-section section-hero">
+      <!-- Designer Background Assets: Smokey Atmosphere + Concrete Texture -->
+      <div class="hero-bg-smokey"></div>
+      <div class="hero-bg-concrete"></div>
+
+      <!-- Celestial Planet Sphere Glows -->
+      <div class="hero-cosmic-glow"></div>
+      <div class="hero-celestial-sphere"></div>
+      
+      <!-- Designer Center Lens Flare -->
+      <img src="images/figma_raw/blik_lens_flare.png" alt="" class="hero-lens-flare-img" aria-hidden="true">
+
+      <div class="hero-content-wrapper">
+        <div class="hero-anniversary-badge">
+          <span class="badge-pulse"></span>
+          <span>185 РОКІВ НМУ • 145 РОКІВ СНТ • 26–27 ЛИСТОПАДА 2026 • КИЇВ</span>
+        </div>
+
+        <!-- Giant Falcon Sport One Title -->
+        <h1 class="hero-main-title">
+          <span class="hero-title-ayms falcon-title">AYMS</span>
+          <span class="hero-title-year falcon-title">2026</span>
+        </h1>
+
+        <!-- Slogans Under Crescent (matching Figma positioning) -->
+        <div class="hero-slogans-container">
+          <span class="hero-slogan-left">Inspires to solve</span>
+          <span class="hero-slogan-dot"></span>
+          <span class="hero-slogan-right">and move forward</span>
+        </div>
+
+        <div class="hero-cta-group">
+          <button type="button" class="figma-gradient-btn btn-hero-cta" id="hero-btn-register">
+            <span>Зареєструватися на конференцію</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <a href="#about" class="btn-glass btn-hero-secondary">
+            <span>Про захід</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero-scroll-indicator" aria-label="Гортати до опису заходу">
+        <span class="mouse-icon"><span class="mouse-wheel"></span></span>
+        <span class="scroll-label">Гортати вниз</span>
+      </a>
+    </section>
+
+    <!-- ==================== 2. ABOUT SECTION (Full Letter + Monogram + Ribbon) ==================== -->
+    <section id="about" class="vh-section section-about">
+      <!-- Designer's 3D Blue Wave Ribbon 1 (Hero -> About) -->
+      <img src="images/figma_raw/blue_wave_ribbon_1.webp" alt="" class="about-wave-ribbon-3d" aria-hidden="true">
+      <div class="section-bg-concrete-overlay"></div>
+
+      <div class="section-container about-grid">
+        <!-- Left: Glowing 3D Monogram Emblem & Milestone Counters -->
+        <div class="about-visual-column">
+          <div class="emblem-card-glow">
+            <img src="images/figma_raw/emblem_32_221.svg" alt="AYMS Emblem" class="about-monogram-img">
+            <div class="emblem-ambient-ring"></div>
+          </div>
+
+          <div class="milestones-row">
+            <div class="milestone-card">
+              <span class="milestone-num falcon-title">185</span>
+              <span class="milestone-text">років НМУ імені О.О. Богомольця</span>
+            </div>
+            <div class="milestone-card">
+              <span class="milestone-num falcon-title">145</span>
+              <span class="milestone-text">років СНТ імені О.А. Киселя</span>
+            </div>
+            <div class="milestone-card">
+              <span class="milestone-num falcon-title">90</span>
+              <span class="milestone-text">років першій конференції (1936)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Full Letter Text from Figma -->
+        <div class="about-text-column">
+          <div class="section-tag">// ПРО ЗАХІД</div>
+          <h2 class="about-greeting-title">
+            Шановні колеги – студенти, лікарі-інтерни, аспіранти та молоді науковці!
+          </h2>
+
+          <div class="about-full-letter">
+            <p class="about-letter-p">
+              Справжня наука ніколи не починається з наукових ступенів чи формальних публікацій. Вона народжується біля ліжка пацієнта, у незручних клінічних запитаннях, біля лабораторного мікроскопа та в нічних годинах розрахунку статистичних моделей. Організаційний комітет <strong>Annual Young Medical Scientists’ Conference 2026</strong> радий вітати кожного, хто обирає не просто спостерігати за еволюцією медицини, а рухати її вперед своїми ідеями, експериментами й аналітикою.
+            </p>
+
+            <p class="about-letter-p">
+              Цьогорічний AYMSConf є особливою віхою, що поєднує глибоку історію з поглядом у майбутнє. Ми відзначаємо <strong>185-річчя</strong> Національного медичного університету імені О. О. Богомольця та <strong>145-річчя</strong> нашого Студентського наукового товариства. До того ж, рівно <strong>90 років тому</strong>, у далекому 1936-му, Товариство вперше організувало студентську наукову конференцію, довівши, що голос молодого дослідника здатен звучати потужно й на рівних із визнаними вченими.
+            </p>
+
+            <p class="about-letter-p">
+              Сьогодні ми не просто продовжуємо майже столітню традицію — ми перезавантажуємо академічний простір під виклики сучасності. AYMSConf 2026 створений як відкрита платформа для тих, хто цінує доказову медицину, бездоганний дизайн досліджень, прозору наукову етику та чесну експертну дискусію без формалізму. Тут фундаментальна біомедицина зустрічається з практичною хірургією, терапією та новими технологіями, перетворюючи сміливі гіпотези на реальні клінічні рішення.
+            </p>
+
+            <p class="about-letter-p about-letter-conclusion">
+              Запрошуємо студентів, інтернів, аспірантів та молодих науковців представити свої результати, знайти однодумців для спільних міждисциплінарних проєктів і заявити про себе на головній медичній молодіжній події року. <span class="highlight-orange">До зустрічі на AYMSConf 2026!</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. ORGANIZERS SECTION (100vh) ==================== -->
+    <section id="organizers" class="vh-section section-organizers">
+      <!-- Designer's 3D Wave Ribbon 2 (Organizers) -->
+      <img src="images/figma_raw/wave_ribbon_2.webp" alt="" class="org-wave-ribbon-3d" aria-hidden="true">
+      <div class="section-bg-concrete-overlay"></div>
+
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-tag">// ОРГАНІЗАТОРИ</span>
+          <h2 class="section-title falcon-title">ОРГАНІЗАТОРИ</h2>
+          <p class="section-subtitle">Інституції, що об'єднують досвід поколінь та молодіжні наукові ініціативи</p>
+        </div>
+
+        <div class="organizers-cards-grid">
+          <!-- Card 1: NMU -->
+          <div class="organizer-glass-card">
+            <div class="org-logo-wrapper">
+              <img src="images/figma_raw/logo_nmu_card.svg" alt="НМУ імені О.О. Богомольця" class="org-logo-svg">
+            </div>
+            <h3 class="org-card-title">Національний медичний університет імені О. О. Богомольця</h3>
+            <p class="org-card-desc">
+              Провідний заклад вищої медичної освіти України зі 185-річною історією. 
+              Осередок фундаментальних відкриттів, авторитетних клінічних шкіл та міжнародного співробітництва.
+            </p>
+            <div class="org-card-tag">Опорний заклад вищої освіти</div>
+          </div>
+
+          <!-- Card 2: SNT -->
+          <div class="organizer-glass-card highlight-card">
+            <div class="org-logo-wrapper">
+              <img src="images/figma_raw/snt_logo_card.png" alt="СНТ імені О.А. Киселя" class="org-logo-img">
+            </div>
+            <h3 class="org-card-title">Студентське наукове товариство імені О. А. Киселя</h3>
+            <p class="org-card-desc">
+              Одне з найстаріших наукових товариств Європи (145 років). 
+              Об'єднує понад 100 профільних наукових гуртків та формує культуру доказових досліджень.
+            </p>
+            <div class="org-card-tag accent-tag">Організатор конференції</div>
+          </div>
+
+          <!-- Card 3: TMV -->
+          <div class="organizer-glass-card">
+            <div class="org-logo-wrapper">
+              <img src="images/figma_raw/tmv_logo_card.png" alt="Товариство молодих вчених" class="org-logo-img">
+            </div>
+            <h3 class="org-card-title">Товариство молодих вчених та спеціалістів НМУ</h3>
+            <p class="org-card-desc">
+              Платформа підтримки лікарів-інтернів, аспірантів та PhD-дослідників. 
+              Сприяє грантовій діяльності та інтеграції молодих вчених у світовий науковий простір.
+            </p>
+            <div class="org-card-tag">Післядипломна наука</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. WHY JOIN & BONUSES ==================== -->
+    <section id="why-join" class="vh-section section-why-join">
+      <div class="section-bg-concrete-overlay"></div>
+      <div class="why-cosmic-glow"></div>
+      <!-- Designer 3D Wave Ribbon Sweeping Behind Cards -->
+      <img src="images/figma_raw/wave_ribbon_2.webp" alt="" class="why-wave-ribbon-3d" aria-hidden="true">
+
+      <div class="section-container">
+        <!-- Top Block: Why Join -->
+        <div class="why-join-block">
+          <div class="section-tag">// ПЕРЕВАГИ УЧАСТІ</div>
+          <h2 class="section-title falcon-title">ЧОМУ ВАРТО СТАТИ ЧАСТИНОЮ AYMS CONF 2026?</h2>
+          
+          <div class="why-join-layout">
+            <div class="why-gradient-bar" aria-hidden="true"></div>
+            <div class="reasons-list">
+              <div class="reason-item">
+                <span class="reason-title">Апробація досліджень на національному рівні:</span>
+                <span class="reason-desc">можливість виступити перед фаховим журі та провідними клініцистами України.</span>
+              </div>
+              <div class="reason-item">
+                <span class="reason-title">Публікація тез у збірнику матеріалів:</span>
+                <span class="reason-desc">збірник матеріалів конференції з присвоєнням ISBN та обов'язковим індексуванням.</span>
+              </div>
+              <div class="reason-item">
+                <span class="reason-title">Чесна та конструктивна експертна оцінка:</span>
+                <span class="reason-desc">фідбек від експертів галузі для подальшого вдосконалення ваших напрацювань.</span>
+              </div>
+              <div class="reason-item">
+                <span class="reason-title">Спільнота однодумців:</span>
+                <span class="reason-desc">знайомство з провідними експертами, майбутніми колегами та потенційними науковими керівниками з усієї країни.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle Block: Bonuses with White/Glass Cards (Figma Rectangle 324-327) -->
+        <div class="bonuses-block">
+          <div class="section-tag">// ЩО ОТРИМУЄ УЧАСНИК</div>
+          <h2 class="section-title falcon-title">БОНУСИ ТА ЩО ОТРИМУЄ УЧАСНИК?</h2>
+
+          <div class="bonuses-grid-4">
+            <div class="figma-bonus-card">
+              <div class="bonus-icon-box">
+                <img src="images/figma_raw/icon_certificate.svg" alt="Сертифікат">
+              </div>
+              <p class="bonus-text-italic">
+                Офіційний сертифікат учасника із зазначенням форми участі (для доповідачів).
+              </p>
+            </div>
+
+            <div class="figma-bonus-card">
+              <div class="bonus-icon-box">
+                <img src="images/figma_raw/icon_diploma.svg" alt="Диплом">
+              </div>
+              <p class="bonus-text-italic">
+                Дипломи I, II, III ступенів та спеціальні відзнаки оргкомітету для переможців секцій.
+              </p>
+            </div>
+
+            <div class="figma-bonus-card">
+              <div class="bonus-icon-box">
+                <img src="images/figma_raw/icon_welcome_pack.svg" alt="Пакет">
+              </div>
+              <p class="bonus-text-italic">
+                Пакет учасника (Welcome Pack) для очних делегатів.
+              </p>
+            </div>
+
+            <div class="figma-bonus-card">
+              <div class="bonus-icon-box">
+                <img src="images/figma_raw/icon_coffee_break.svg" alt="Кава">
+              </div>
+              <p class="bonus-text-italic">
+                Доступ до нетворкінг-зон та кава-брейків для неформального обговорення наукових колаборацій.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Free for Students Figma Banner -->
+        <div class="free-student-figma-banner">
+          <div class="free-banner-text-box">
+            <span class="free-highlight-tag">ГРАНТОВА ПІДТРИМКА</span>
+            <span class="free-text-title">Для студентів участь у конференції є безкоштовною</span>
+          </div>
+          <button type="button" class="figma-gradient-btn" id="banner-btn-register">
+            Подати роботу
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. KEY FACTS (100vh) ==================== -->
+    <section id="facts" class="vh-section section-facts">
+      <div class="section-bg-concrete-overlay"></div>
+      <div class="facts-cosmic-sphere"></div>
+      <!-- Designer Center Lens Flare -->
+      <img src="images/figma_raw/blik_lens_flare.png" alt="" class="facts-lens-flare-img" aria-hidden="true">
+      <!-- Designer 3D Blue Wave Ribbon Sweeping across facts -->
+      <img src="images/figma_raw/blue_wave_ribbon_1.webp" alt="" class="facts-wave-ribbon-3d" aria-hidden="true">
+
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-tag">// ПАРАМЕТРИ</span>
+          <h2 class="section-title falcon-title">КЛЮЧОВІ ФАКТИ ПОДІЇ</h2>
+          <p class="section-subtitle">Основні організаційні параметри для планування вашої участі</p>
+        </div>
+
+        <div class="facts-grid-4">
+          <!-- Fact 1 -->
+          <div class="fact-glass-card">
+            <div class="fact-number-glow falcon-title">01</div>
+            <div class="fact-icon">🌐</div>
+            <h3 class="fact-title">Формат</h3>
+            <div class="fact-value">Змішаний</div>
+            <p class="fact-desc">
+              Офлайн-події в аудиторіях НМУ + платформа для дистанційних учасників.
+            </p>
+          </div>
+
+          <!-- Fact 2 -->
+          <div class="fact-glass-card">
+            <div class="fact-number-glow falcon-title">02</div>
+            <div class="fact-icon">📅</div>
+            <h3 class="fact-title">Дати проведення</h3>
+            <div class="fact-value">26–27.11.2026</div>
+            <p class="fact-desc">
+              <strong>26.11.26</strong> (секційні засідання)<br>
+              <strong>27.11.26</strong> (воркшопи)
+            </p>
+          </div>
+
+          <!-- Fact 3 -->
+          <div class="fact-glass-card">
+            <div class="fact-number-glow falcon-title">03</div>
+            <div class="fact-icon">🗣️</div>
+            <h3 class="fact-title">Мова конференції</h3>
+            <div class="fact-value">UA / EN</div>
+            <p class="fact-desc">
+              Українська та англійська мови. Можливість представлення міжнародних робіт.
+            </p>
+          </div>
+
+          <!-- Fact 4 -->
+          <div class="fact-glass-card highlight-card">
+            <div class="fact-number-glow falcon-title">04</div>
+            <div class="fact-icon">🎓</div>
+            <h3 class="fact-title">Вартість участі</h3>
+            <div class="fact-value accent-green">0 ₴ (Безкоштовно)</div>
+            <p class="fact-desc">
+              Для студентів участь у конференції є безкоштовною.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. SECTIONS (100vh) ==================== -->
+    <section id="sections" class="vh-section section-sections">
+      <div class="section-bg-concrete-overlay"></div>
+      <div class="sections-cosmic-glow"></div>
+      <!-- Designer 3D Wave Ribbon Sweeping Behind Track Cards -->
+      <img src="images/figma_raw/wave_ribbon_2.webp" alt="" class="sections-wave-ribbon-3d" aria-hidden="true">
+
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-tag">// НАУКОВІ НАПРЯМИ</span>
+          <h2 class="section-title falcon-title">СЕКЦІЇ</h2>
+          <p class="section-subtitle">12 фахових напрямів наукової програми конференції</p>
+        </div>
+
+        <div class="tracks-grid-12">
+          <div class="track-card">
+            <span class="track-code falcon-title">01</span>
+            <h4>Внутрішня медицина & кардіологія</h4>
+          </div>
+          <div class="track-card">
+            <span class="track-code falcon-title">02</span>
+            <h4>Загальна та малоінвазивна хірургія</h4>
+          </div>
+          <div class="track-card">
+            <span class="track-code falcon-title">03</span>
+            <h4>Анестезіологія та інтенсивна терапія</h4>
+          </div>
+          <div class="track-card">
+            <span class="track-code falcon-title">04</span>
+            <h4>Педіатрія та неонатологія</h4>
+          </div>
+          <div class="track-card">
+            <span class="track-code falcon-title">05</span>
+            <h4>Акушерство та гінекологія</h4>
+          </div>
+          <div class="track-card">
+            <span class="track-code falcon-title">06</span>
+            <h4>Неврологія та нейрохірургія</h4>
+          </div>
+          <div class="track-card">
+            <span class="track-code falcon-title">07</span>
+            <h4>Психіатрія та медична психологія</h4>
+          </div>
+          <div class="track-card">
+            <span class="track-code falcon-title">08</span>
+            <h4>Стоматологія та щелепно-лицева хірургія</h4>
+          </div>
+          <div class="track-card">
+            <span class="track-code falcon-title">09</span>
+            <h4>Офтальмологія та оториноларингологія</h4>
+          </div>
+          <div class="track-card">
+            <span class="track-code falcon-title">10</span>
+            <h4>Фармація та клінічна фармакологія</h4>
+          </div>
+          <div class="track-card">
+            <span class="track-code falcon-title">11</span>
+            <h4>Фундаментальна біомедицина & генетика</h4>
+          </div>
+          <div class="track-card">
+            <span class="track-code falcon-title">12</span>
+            <h4>Військова медицина & такмед</h4>
+          </div>
+        </div>
+
+        <div class="sections-note-bar">
+          <span class="note-icon">📌</span>
+          <p>
+            <strong>Примітка:</strong> ви можете презентувати до <strong>3 власних досліджень</strong> у різних секціях. 
+            Кожна робота подається окремою реєстраційною формою.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. STAGES & IMPORTANT LINKS (3D Glass Chain) ==================== -->
+    <section id="stages" class="vh-section section-stages">
+      <div class="section-bg-concrete-overlay"></div>
+      <!-- Designer Center Lens Flare behind Criteria Cards -->
+      <img src="images/figma_raw/blik_lens_flare.png" alt="" class="stages-lens-flare-img" aria-hidden="true">
+      <!-- Designer's 3D Glass Chain Ribbon (Weaving through criteria cards) -->
+      <img src="images/figma_raw/glass_chain_original.webp" alt="" class="stages-glass-chain-3d" aria-hidden="true">
+
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-tag">// РЕГЛАМЕНТ ТА ЕТАПИ</span>
+          <h2 class="section-title falcon-title">РЕГЛАМЕНТ ТА ЕТАПИ ВІДБОРУ</h2>
+          <p class="section-subtitle">Кроки участі від подання матеріалів до публікації та нагородження</p>
+        </div>
+
+        <!-- 4 Steps with Designer's Roman Numeral SVGs -->
+        <div class="stages-timeline-row">
+          <div class="timeline-step">
+            <div class="step-numeral-svg"><img src="images/figma_raw/stage_I.svg" alt="I"></div>
+            <h4>Подання тез</h4>
+            <p>Заповнення форми та завантаження тез згідно з вимогами.</p>
+          </div>
+          <div class="timeline-step-arrow"></div>
+
+          <div class="timeline-step">
+            <div class="step-numeral-svg"><img src="images/figma_raw/stage_II.svg" alt="II"></div>
+            <h4>Рецензування</h4>
+            <p>Двоетапна сліпа експертна оцінка науковим журі.</p>
+          </div>
+          <div class="timeline-step-arrow"></div>
+
+          <div class="timeline-step">
+            <div class="step-numeral-svg"><img src="images/figma_raw/stage_III.svg" alt="III"></div>
+            <h4>Запрошення</h4>
+            <p>Оприлюднення програми та розсилка офіційних запрошень.</p>
+          </div>
+          <div class="timeline-step-arrow"></div>
+
+          <div class="timeline-step">
+            <div class="step-numeral-svg"><img src="images/figma_raw/stage_IV.svg" alt="IV"></div>
+            <h4>Виступ & Фінал</h4>
+            <p>Захист дослідження, дискусія та нагородження переможців.</p>
+          </div>
+        </div>
+
+        <!-- Important Links Heading -->
+        <div class="criteria-header-center">
+          <h3 class="criteria-section-title falcon-title">ВАЖЛИВІ ПОСИЛАННЯ</h3>
+        </div>
+
+        <!-- 3 Signature Glass Criteria Cards (Rectangle 316, 330, 331) -->
+        <div class="criteria-cards-trio">
+          <button type="button" class="criteria-card-btn" id="btn-desktop-theses">
+            <div class="criteria-card-inner">
+              <h3 class="criteria-heading">Вимоги до<br>оформлення тез</h3>
+              <div class="criteria-action-link">
+                <span>Відкрити вимоги</span>
+                <span class="arrow-glyph">→</span>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="criteria-card-btn featured-criteria" id="btn-desktop-sample">
+            <div class="criteria-card-inner">
+              <h3 class="criteria-heading">Зразок<br>оформлення<br>роботи</h3>
+              <div class="criteria-action-link">
+                <span>Переглянути зразок</span>
+                <span class="arrow-glyph">→</span>
+              </div>
+            </div>
+          </button>
+
+          <button type="button" class="criteria-card-btn" id="btn-desktop-presentation">
+            <div class="criteria-card-inner">
+              <h3 class="criteria-heading">Вимоги до<br>виступу й<br>слайдів</h3>
+              <div class="criteria-action-link">
+                <span>Читати інструкцію</span>
+                <span class="arrow-glyph">→</span>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. LOGISTICS, SAFETY & FOOTER ==================== -->
+    <section id="contacts" class="vh-section section-contacts">
+      <div class="section-bg-concrete-overlay"></div>
+      <!-- Bottom Celestial Blue Sphere Arc Horizon -->
+      <div class="footer-blue-sphere-arc"></div>
+
+      <div class="section-container">
+        <!-- Top: Safety Protocol & Logistics (Full Text from Figma) -->
+        <div class="logistics-dual-grid">
+          <div class="logistics-card safety-card">
+            <div class="logistics-header">
+              <span class="logistics-icon">🛡️</span>
+              <h3>Безпековий протокол</h3>
+            </div>
+            <p>
+              Усі локації проведення конференції забезпечені укриттями цивільного захисту. У разі оголошення сигналу «Повітряна тривога» засідання та майстер-класи призупиняються, а учасники організовано переходять до укриттів, де (за технічної можливості) робота секцій продовжується. Безпека кожного делегата є нашим безумовним пріоритетом.
+            </p>
+          </div>
+
+          <div class="logistics-card travel-card">
+            <div class="logistics-header">
+              <span class="logistics-icon">🚆</span>
+              <h3>Проживання та проїзд</h3>
+            </div>
+            <p>
+              Витрати на проїзд та проживання покриваються учасниками самостійно або за рахунок сторони, що відряджає. За необхідності організаційний комітет надає інформаційну та координаційну підтримку щодо поселення іногородніх учасників у гуртожитках університету або партнерських закладах розміщення. За запитом учасників, чиї роботи прийнято до програми, організаційний комітет надсилає офіційні іменні листи-запрошення для оформлення відрядження за місцем навчання або роботи.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom: Master Footer matching Figma Layout -->
+        <footer class="desktop-master-footer">
+          <div class="footer-columns-row">
+            <div class="footer-brand-col">
+              <div class="footer-logo-box">
+                <span class="footer-ayms-falcon falcon-title">AYMS</span>
+              </div>
+              <p class="footer-tagline">
+                Annual Young Medical Scientists’ Conference 2026.<br>
+                Національний медичний університет імені О. О. Богомольця.
+              </p>
+              <div class="footer-anniversary-tag">
+                185 років НМУ • 145 років СНТ • 90 років першій конференції
+              </div>
+            </div>
+
+            <div class="footer-links-col">
+              <h4 class="footer-col-title">Навігація</h4>
+              <ul class="footer-list">
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#sections">Секції</a></li>
+                <li><a href="#stages">Регламент</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-contacts-col">
+              <h4 class="footer-col-title">Контакти</h4>
+              <ul class="footer-contacts-list">
+                <li>
+                  <span class="contact-lbl">Email:</span>
+                  <a href="mailto:snt@nmu.ua" class="contact-val">snt@nmu.ua</a>
+                </li>
+                <li>
+                  <span class="contact-lbl">Номер:</span>
+                  <a href="tel:+380973299322" class="contact-val">+380 97 329 93 22</a>
+                </li>
+                <li>
+                  <span class="contact-lbl">Telegram:</span>
+                  <a href="https://t.me/areskaro" target="_blank" rel="noopener noreferrer" class="contact-val">@areskaro</a>
+                </li>
+                <li>
+                  <span class="contact-lbl">Telegram-канал:</span>
+                  <a href="https://t.me/aymsconf" target="_blank" rel="noopener noreferrer" class="contact-val channel-val">@aymsconf</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-cta-col">
+              <h4 class="footer-col-title">Участь у події</h4>
+              <p class="footer-cta-desc">Приєднуйтесь до головної медичної молодіжної події року.</p>
+              <button type="button" class="figma-gradient-btn footer-reg-btn" id="footer-btn-register">
+                Зареєструватися
+              </button>
+            </div>
+          </div>
+
+          <div class="footer-bottom-bar">
+            <span>© 2026 AYMS Conf • Студентське наукове товариство імені О. А. Киселя НМУ</span>
+            <span>Kyiv, Ukraine • All Rights Reserved</span>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== INTERACTIVE MODALS ==================== -->
+  <div id="modal-container" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="modal-close" aria-label="Закрити вікно">&times;</button>
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Вимоги</h3>
+      </div>
+      <div id="modal-body" class="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="figma-gradient-btn modal-action-btn" id="modal-confirm-btn">Зрозуміло</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
