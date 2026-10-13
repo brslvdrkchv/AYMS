@@ -186,8 +186,12 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-m-open-theses')?.addEventListener('click', () => openModal('theses'));
   document.getElementById('btn-m-open-sample')?.addEventListener('click', () => openModal('sample'));
   document.getElementById('btn-m-open-presentation')?.addEventListener('click', () => openModal('presentation'));
-  document.getElementById('btn-nav-register')?.addEventListener('click', () => openModal('register'));
+  document.getElementById('btn-nav-register')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal('register');
+  });
   document.getElementById('btn-back-to-top')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  document.getElementById('btn-m-back-to-top')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
   modalClose?.addEventListener('click', closeModal);
   modalConfirmBtn?.addEventListener('click', closeModal);

@@ -11,7 +11,171 @@
 <body class="desktop-view">
 
   <!-- ==================== FIXED NAVBAR ==================== -->
-  <header class="desktop-navbar" id="desktop-nav">
+    <!-- ==================== MOBILE EXPERIENCE (< 992px) ==================== -->
+  <div class="mobile-experience">
+    <!-- Floating Back to Top Button -->
+    <aside class="floating-controls" aria-label="Швидка навігація">
+      <button type="button" id="btn-m-back-to-top" class="floating-btn" aria-label="Повернутися нагору" title="Нагору">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 15l-6-6-6 6"/>
+        </svg>
+      </button>
+    </aside>
+
+    <main class="site-container">
+      <!-- 1. Hero Section -->
+      <header id="m-hero" class="figma-section">
+        <img src="images/figma_sections/sec_1_hero.png" alt="AYMS Conf 2026 - Головний екран" class="section-bg" width="1920" height="1080">
+        <nav class="nav-overlay" aria-label="Головне меню">
+          <a href="#m-hero" class="hotspot hotspot-logo" aria-label="Логотип AYMS - На початок"></a>
+          <a href="#m-about" class="hotspot hotspot-nav-about" title="Про захід"><span class="hotspot-tooltip">Про захід</span></a>
+          <a href="#m-sections" class="hotspot hotspot-nav-sections" title="Секції"><span class="hotspot-tooltip">Секції</span></a>
+          <a href="#m-stages" class="hotspot hotspot-nav-stages" title="Регламент"><span class="hotspot-tooltip">Регламент</span></a>
+          <a href="#register" class="hotspot hotspot-nav-register" id="btn-nav-register" title="Зареєструватися"><span class="hotspot-tooltip">Зареєструватися</span></a>
+        </nav>
+        <div class="sr-only">
+          <h1>AYMS Conf 2026</h1>
+          <p>Annual Young Medical Scientists’ Conference</p>
+          <p>Inspires to solve and move forward</p>
+        </div>
+      </header>
+
+      <!-- 2. About Section -->
+      <section id="m-about" class="figma-section">
+        <img src="images/figma_sections/sec_2_about.png" alt="Про захід — AYMS Conf 2026" class="section-bg" width="1920" height="2003" loading="lazy">
+        <div class="sr-only">
+          <h2>Шановні колеги – студенти, лікарі-інтерни, аспіранти та молоді науковці!</h2>
+          <p>Справжня наука ніколи не починається з наукових ступенів чи формальних публікацій. Вона народжується біля ліжка пацієнта, у незручних клінічних запитаннях, біля лабораторного мікроскопа та в нічних годинах розрахунку статистичних моделей. Організаційний комітет Annual Young Medical Scientists’ Conference 2026 радий вітати кожного, хто обирає не просто спостерігати за еволюцією медицини, а рухати її вперед своїми ідеями, експериментами й аналітикою.</p>
+          <p>Цьогорічний AYMSConf є особливою віхою, що поєднує глибоку історію з поглядом у майбутнє. Ми відзначаємо 185-річчя Національного медичного університету імені О. О. Богомольця та 145-річчя нашого Студентського наукового товариства. До того ж, рівно 90 років тому, у далекому 1936-му, Товариство вперше організувало студентську наукову конференцію, довівши, що голос молодого дослідника здатен звучати потужно й на рівних із визнаними вченими.</p>
+          <p>Сьогодні ми не просто продовжуємо майже столітню традицію — ми перезавантажуємо академічний простір під виклики сучасності. AYMSConf 2026 створений як відкрита платформа для тих, хто цінує доказову медицину, бездоганний дизайн досліджень, прозору наукову етику та чесну експертну дискусію без формалізму. Тут фундаментальна біомедицина зустрічається з практичною хірургією, терапією та новими технологіями, перетворюючи сміливі гіпотези на реальні клінічні рішення.</p>
+          <p>Запрошуємо студентів, інтернів, аспірантів та молодих науковців представити свої результати, знайти однодумців для спільних міждисциплінарних проєктів і заявити про себе на головній медичній молодіжній події року. До зустрічі на AYMSConf 2026!</p>
+        </div>
+      </section>
+
+      <!-- 3. Organizers Section -->
+      <section id="m-organizers" class="figma-section">
+        <img src="images/figma_sections/sec_3_organizers.png" alt="Організатори заходу" class="section-bg" width="1920" height="1382" loading="lazy">
+        <div class="sr-only">
+          <h2>Організатори</h2>
+          <p>Національний медичний університет імені О. О. Богомольця</p>
+          <p>Студентське наукове товариство імені О. А. Киселя</p>
+          <p>Товариство молодих вчених та спеціалістів НМУ імені О. О. Богомольця</p>
+        </div>
+      </section>
+
+      <!-- 4. Why Join & Bonuses Section -->
+      <section id="m-why-join" class="figma-section">
+        <img src="images/figma_sections/sec_4_why_join.png" alt="Чому варто стати частиною AYMS Conf 2026 та Бонуси" class="section-bg" width="1920" height="3749" loading="lazy">
+        <div class="sr-only">
+          <h2>ЧОМУ ВАРТО СТАТИ ЧАСТИНОЮ AYMS CONF 2026?</h2>
+          <ul>
+            <li><strong>Апробація досліджень на національному рівні:</strong> можливість виступити перед фаховим журі та провідними клініцистами України.</li>
+            <li><strong>Публікація тез:</strong> збірник матеріалів конференції з присвоєнням ISBN та обов'язковим індексуванням.</li>
+            <li><strong>Чесна та конструктивна експертна оцінка:</strong> фідбек від експертів галузі для подальшого вдосконалення ваших напрацювань.</li>
+            <li><strong>Спільнота однодумців:</strong> знайомство з провідними експертами, майбутніми колегами та потенційними науковими керівниками з усієї країни.</li>
+          </ul>
+          <h2>БОНУСИ ТА ЩО ОТРИМУЄ УЧАСНИК?</h2>
+          <ul>
+            <li>Офіційний сертифікат учасника із зазначенням форми участі (для доповідачів).</li>
+            <li>Дипломи I, II, III ступенів та спеціальні відзнаки оргкомітету для переможців секцій.</li>
+            <li>Пакет учасника (Welcome Pack) для очних делегатів.</li>
+            <li>Доступ до нетворкінг-зон та кава-брейків для неформального обговорення наукових колаборацій.</li>
+          </ul>
+          <p><strong>Для студентів участь у конференції є безкоштовною</strong></p>
+        </div>
+      </section>
+
+      <!-- 5. Key Facts Section -->
+      <section id="m-key-facts" class="figma-section">
+        <img src="images/figma_sections/sec_5_key_facts.png" alt="Ключові факти події" class="section-bg" width="1920" height="2236" loading="lazy">
+        <div class="sr-only">
+          <h2>КЛЮЧОВІ ФАКТИ ПОДІЇ</h2>
+          <dl>
+            <dt>Формат:</dt>
+            <dd>Змішаний (офлайн-події в аудиторіях НМУ + платформа для дистанційних учасників)</dd>
+            <dt>Дати проведення:</dt>
+            <dd>26.11.26 (секційні засідання), 27.11.26 (воркшопи)</dd>
+            <dt>Місце проведення:</dt>
+            <dd>Морфологічний корпус НМУ ім. Богомольця (м. Київ, Берестейський пр-т, 34)</dd>
+            <dt>Цільова аудиторія:</dt>
+            <dd>Студенти мед. ВНЗ, лікарі-інтерни, аспіранти, клінічні ординатори, молоді вчені до 35 років</dd>
+            <dt>Вартість участі:</dt>
+            <dd>Безкоштовно для студентів; гнучкі тарифи для лікарів та вчених</dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 6. Sections / Tracks Section -->
+      <section id="m-sections" class="figma-section">
+        <img src="images/figma_sections/sec_6_sections.png" alt="Наукові напрямки та секції" class="section-bg" width="1920" height="2804" loading="lazy">
+        <div class="sr-only">
+          <h2>НАУКОВІ НАПРЯМКИ ТА СЕКЦІЇ</h2>
+          <ol>
+            <li>Внутрішня медицина та кардіологія</li>
+            <li>Хірургія, анестезіологія та реаніматологія</li>
+            <li>Педіатрія, неонатологія та акушерство</li>
+            <li>Фундаментальна медицина та фармакологія</li>
+            <li>Неврологія, психіатрія та нейрохірургія</li>
+            <li>Онкологія, променева діагностика та терапія</li>
+            <li>Стоматологія та щелепно-лицева хірургія</li>
+            <li>Гігієна, соціальна медицина та громадське здоров'''я</li>
+            <li>Військова медицина, медицина катастроф та травматологія</li>
+            <li>Інфекційні хвороби, імунологія та алергологія</li>
+            <li>Офтальмологія та оториноларингологія</li>
+            <li>Медична психологія, реабілітація та фізична терапія</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 7. Stages, Selection & Criteria Section -->
+      <section id="m-stages" class="figma-section">
+        <img src="images/figma_sections/sec_7_stages.png" alt="Регламент та етапи конференції" class="section-bg" width="1920" height="2567" loading="lazy">
+        <div class="criteria-hotspots-overlay" aria-label="Вимоги та зразки">
+          <button type="button" class="hotspot hotspot-theses" id="btn-m-open-theses" aria-label="Відкрити вимоги до оформлення тез" title="Вимоги до оформлення тез"></button>
+          <button type="button" class="hotspot hotspot-sample" id="btn-m-open-sample" aria-label="Відкрити зразок оформлення роботи" title="Зразок оформлення роботи"></button>
+          <button type="button" class="hotspot hotspot-presentation" id="btn-m-open-presentation" aria-label="Відкрити вимоги до виступу й слайдів" title="Вимоги до виступу й слайдів"></button>
+        </div>
+        <div class="sr-only">
+          <h2>РЕГЛАМЕНТ ТА ЕТАПИ ВІДБОРУ</h2>
+          <ol>
+            <li><strong>Етап I — Подання тез та матеріалів:</strong> Відкриття електронної реєстрації, заповнення форми та прикріплення тез до 15 жовтня 2026.</li>
+            <li><strong>Етап II — Рецензування та відбір робіт:</strong> «Сліпе» рецензування фаховим оргкомітетом та оцінка дизайну дослідження до 01 листопада 2026.</li>
+            <li><strong>Етап III — Оголошення фінальної програми:</strong> Публікація списку доповідачів та розклад роботи наукових секцій до 10 листопада 2026.</li>
+            <li><strong>Етап IV — Проведення AYMS Conf 2026:</strong> Урочисте відкриття, усні доповіді, дискусії, воркшопи та нагородження 26-27 листопада 2026.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 8. Logistics, Security & Contacts Footer -->
+      <footer id="m-footer" class="figma-section">
+        <img src="images/figma_sections/sec_8_footer.png" alt="Контакти, безпековий протокол та локація" class="section-bg" width="1920" height="2479" loading="lazy">
+        <div class="footer-hotspots-overlay" aria-label="Контакти та навігація футера">
+          <a href="#m-about" class="hotspot hotspot-footer-about" title="Про нас" aria-label="Перейти до Про нас"></a>
+          <a href="#m-sections" class="hotspot hotspot-footer-sections" title="Секції" aria-label="Перейти до Секції"></a>
+          <a href="#m-stages" class="hotspot hotspot-footer-stages" title="Регламент" aria-label="Перейти до Регламент"></a>
+          <a href="mailto:snt@nmu.ua" class="hotspot hotspot-footer-email" title="Написати листа: snt@nmu.ua" aria-label="Email: snt@nmu.ua"></a>
+          <a href="tel:+380973299322" class="hotspot hotspot-footer-phone" title="Зателефонувати: +380 97 329 93 22" aria-label="Телефон: +380 97 329 93 22"></a>
+          <a href="https://t.me/areskaro" target="_blank" rel="noopener noreferrer" class="hotspot hotspot-footer-tg-admin" title="Telegram: @areskaro" aria-label="Telegram: @areskaro"></a>
+          <a href="https://t.me/aymsconf" target="_blank" rel="noopener noreferrer" class="hotspot hotspot-footer-tg-channel" title="Telegram-канал: @aymsconf" aria-label="Telegram-канал: @aymsconf"></a>
+        </div>
+        <div class="sr-only">
+          <h2>Безпековий протокол</h2>
+          <p>Усі локації проведення конференції забезпечені укриттями цивільного захисту. У разі оголошення сигналу «Повітряна тривога» засідання та майстер-класи призупиняються, а учасники організовано переходять до укриттів, де (за технічної можливості) робота секцій продовжується. Безпека кожного делегата є нашим безумовним пріоритетом.</p>
+          <h2>Проживання та проїзд</h2>
+          <p>Витрати на проїзд та проживання покриваються учасниками самостійно або за рахунок сторони, що відряджає. За необхідності організаційний комітет надає інформаційну та координаційну підтримку щодо поселення іногородніх учасників у гуртожитках університету або партнерських закладах розміщення. За запитом учасників, чиї роботи прийнято до програми, організаційний комітет надсилає офіційні іменні листи-запрошення для оформлення відрядження за місцем навчання або роботи.</p>
+          <h2>Контакти</h2>
+          <p>Email: snt@nmu.ua</p>
+          <p>Номер: +380 97 329 93 22</p>
+          <p>Telegram: @areskaro</p>
+          <p>Telegram-канал: @aymsconf</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- ==================== DESKTOP EXPERIENCE (>= 992px) ==================== -->
+  <div class="desktop-experience">
+<header class="desktop-navbar" id="desktop-nav">
     <div class="nav-container">
       <a href="#hero" class="nav-brand" aria-label="Головна AYMS 2026">
         <img src="images/figma_raw/vector_41_223.svg" alt="AYMS" class="nav-logo-img">
@@ -618,16 +782,17 @@
       </div>
     </section>
 
-  </main>
+    <!-- ==================== FLOATING QUICK CONTROLS ==================== -->
+    <aside class="floating-controls" aria-label="Швидка навігація">
+      <button type="button" id="btn-back-to-top" class="floating-btn" aria-label="Повернутися нагору" title="Нагору">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 15l-6-6-6 6"/>
+        </svg>
+      </button>
+    </aside>
 
-  <!-- ==================== FLOATING QUICK CONTROLS ==================== -->
-  <aside class=floating-controls aria-label="Швидка навігація">
-    <button type="button" id="btn-back-to-top" class="floating-btn" aria-label="Повернутися нагору" title="Нагору">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M18 15l-6-6-6 6"/>
-      </svg>
-    </button>
-  </aside>
+  </main>
+  </div>
 
 
   <!-- ==================== INTERACTIVE MODALS ==================== -->
