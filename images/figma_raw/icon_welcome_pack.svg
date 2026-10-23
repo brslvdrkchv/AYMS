@@ -2,11 +2,9 @@
 <path d="M68.875 87.1739V50.6522C68.875 38.5445 73.6819 26.9327 82.2383 18.3712C90.7946 9.80977 102.399 5 114.5 5C126.601 5 138.205 9.80977 146.762 18.3712C155.318 26.9327 160.125 38.5445 160.125 50.6522V87.1739M14.125 50.6522H214.875C219.915 50.6522 224 54.74 224 59.7826V205.87C224 210.912 219.915 215 214.875 215H14.125C9.0854 215 5 210.912 5 205.87V59.7826C5 54.74 9.0854 50.6522 14.125 50.6522Z" stroke="url(#paint0_linear_40_78)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
 <linearGradient id="paint0_linear_40_78" x1="114.5" y1="5" x2="114.5" y2="215" gradientUnits="userSpaceOnUse">
-<stop stop-color="#191F4F"/>
-<stop offset="0.5" stop-color="#2E459F"/>
-<stop offset="0.75" stop-color="#3957C6"/>
-<stop offset="0.875" stop-color="#3E61DA"/>
-<stop offset="0.9375" stop-color="#4065E4"/>
+<stop stop-color="#FFFFFF"/>
+<stop offset="0.35" stop-color="#91E0FD"/>
+<stop offset="0.7" stop-color="#6384FF"/>
 <stop offset="1" stop-color="#436AEE"/>
 </linearGradient>
 </defs>

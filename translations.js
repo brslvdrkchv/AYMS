@@ -48,7 +48,7 @@ const translations = {
     org_card2_title: "Студентське наукове товариство імені О. А. Киселя",
     org_card2_desc: "Одне з найстаріших наукових товариств Європи (145 років). Об'єднує понад 100 профільних наукових гуртків та формує культуру доказових досліджень.",
     org_card2_tag: "Організатор конференції",
-    org_card3_title: "Товариство молодих вчених та спеціалістів НМУ",
+    org_card3_title: "Товариство молодих вчених, аспірантів і спеціалістів",
     org_card3_desc: "Платформа підтримки лікарів-інтернів, аспірантів та PhD-дослідників. Сприяє грантовій діяльності та інтеграції молодих вчених у світовий науковий простір.",
     org_card3_tag: "Післядипломна наука",
 
@@ -65,7 +65,7 @@ const translations = {
     why_b4_desc: "знайомство з провідними експертами, майбутніми колегами та потенційними науковими керівниками з усієї країни.",
 
     // Bonuses
-    bonuses_tag: "// БОНУСИ УЧАСНИКА",
+    bonuses_tag: "// ЩО ОТРИМУЄ УЧАСНИК",
     bonuses_title: "БОНУСИ ТА ЩО ОТРИМУЄ УЧАСНИК?",
     bonus_1_title: "Сертифікат участі",
     bonus_1_desc: "Офіційний сертифікат учасника із зазначенням форми участі (для доповідачів).",
@@ -146,7 +146,7 @@ const translations = {
     footer_nav_stages: "Регламент",
     footer_contacts_title: "Контакти",
     footer_join_title: "Участь у події",
-    footer_join_desc: "Приєднуйтесь до головної медичної молодіжної події року.",
+    footer_join_desc: "Приєднуйтесь до головної медичної молодіжній події року.",
     footer_btn_register: "Зареєструватися",
     footer_copyright: "© 2026 AYMS Conf • Студентське наукове товариство імені О. А. Киселя НМУ"
   },
@@ -195,7 +195,7 @@ const translations = {
     org_card2_title: "O. A. Kysil Student Scientific Society",
     org_card2_desc: "One of Europe's oldest scientific societies (145 years). Uniting over 100 clinical & scientific clubs, fostering a culture of rigorous evidence-based research.",
     org_card2_tag: "Conference Organizer",
-    org_card3_title: "Society of Young Scientists & Specialists of NMU",
+    org_card3_title: "Society of Young Scientists, Postgraduate Students and Specialists",
     org_card3_desc: "Platform supporting medical interns, residents, and PhD fellows. Empowering grant opportunities and integration into the global research landscape.",
     org_card3_tag: "Postgraduate Science",
 

@@ -16,7 +16,9 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype-variations'),
+  src: url('fonts/Montserrat-VariableFont_wght.woff2') format('woff2-variations'),
+       url('fonts/Montserrat-VariableFont_wght.woff2') format('woff2'),
+       url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype-variations'),
        url('fonts/static/Montserrat-Regular.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
@@ -72,13 +74,10 @@ body, body.desktop-view {
     radial-gradient(ellipse at 85% 25%, rgba(67, 106, 238, 0.12) 0%, transparent 55%),
     radial-gradient(ellipse at 15% 50%, rgba(25, 31, 79, 0.3) 0%, transparent 60%),
     radial-gradient(ellipse at 85% 75%, rgba(67, 106, 238, 0.14) 0%, transparent 55%),
-    radial-gradient(ellipse at 50% 100%, rgba(67, 106, 238, 0.2) 0%, transparent 65%),
-    url('images/figma_raw/concrete_texture_bg.webp');
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top center, right 25%, left 50%, right 75%, bottom center, center center;
-  background-size: 100% 1200px, 1200px 1200px, 1200px 1200px, 1200px 1200px, 100% 1200px, cover;
-  background-attachment: scroll, scroll, scroll, scroll, scroll, fixed;
-  background-blend-mode: normal, normal, normal, normal, normal, overlay;
+    radial-gradient(ellipse at 50% 100%, rgba(67, 106, 238, 0.2) 0%, transparent 65%);
+  background-repeat: no-repeat;
+  background-position: top center, right 25%, left 50%, right 75%, bottom center;
+  background-size: 100% 1200px, 1200px 1200px, 1200px 1200px, 1200px 1200px, 100% 1200px;
   overflow-x: hidden;
   color: var(--text-primary);
   min-height: 100vh;
@@ -1103,7 +1102,10 @@ body, body.desktop-view {
 }
 
 .figma-bonus-card {
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border-radius: 24px;
   padding: 30px 24px;
   display: flex;
@@ -1115,15 +1117,19 @@ body, body.desktop-view {
 }
 
 .figma-bonus-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(67, 106, 238, 0.5);
   transform: translateY(-6px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 25px rgba(145, 224, 253, 0.5);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), 0 0 35px rgba(67, 106, 238, 0.3);
 }
 
 .bonus-icon-box {
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  background: rgba(67, 106, 238, 0.12);
+  background: rgba(67, 106, 238, 0.16);
+  border: 1px solid rgba(145, 224, 253, 0.28);
+  box-shadow: 0 0 18px rgba(67, 106, 238, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1133,14 +1139,15 @@ body, body.desktop-view {
 .bonus-icon-box img {
   width: 28px;
   height: 28px;
+  filter: drop-shadow(0 0 6px rgba(145, 224, 253, 0.45));
 }
 
 .bonus-text-italic {
   font-size: 14px;
   font-style: italic;
-  font-weight: 600;
-  color: #0E1325;
-  line-height: 1.5;
+  font-weight: 500;
+  color: #F8FAFC;
+  line-height: 1.55;
 }
 
 .free-student-figma-banner,
@@ -2459,16 +2466,11 @@ body, body.desktop-view {
   }
   .desktop-experience::before {
     content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    inset: 0;
     background: url('images/figma_raw/concrete_texture_bg.webp') no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
-    opacity: 0.05;
-    mix-blend-mode: overlay;
+    opacity: 0.04;
     pointer-events: none;
     z-index: 1;
   }
