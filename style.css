@@ -658,14 +658,15 @@ body, body.desktop-view {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: auto;
-  max-width: 105vw;
-  height: 75vh;
-  max-height: 820px;
+  width: 104vw;
+  max-width: none;
+  height: auto;
   pointer-events: none;
   z-index: 1;
   opacity: 0.65;
   filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.45));
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 }
 
 .about-grid {
@@ -837,16 +838,17 @@ body, body.desktop-view {
 .org-wave-horizontal {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 52%;
   transform: translate(-50%, -50%);
-  width: auto;
-  max-width: 105vw;
-  height: 75vh;
-  max-height: 820px;
+  width: 104vw;
+  max-width: none;
+  height: auto;
   pointer-events: none;
   z-index: 1;
   opacity: 0.60;
   filter: drop-shadow(0 0 50px rgba(145, 224, 253, 0.4));
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 }
 
 .organizers-cards-grid {
@@ -1307,14 +1309,15 @@ body, body.desktop-view {
   left: 50%;
   top: 56%;
   transform: translate(-50%, -50%);
-  width: auto;
-  max-width: 105vw;
-  height: 65vh;
-  max-height: 680px;
+  width: 104vw;
+  max-width: none;
+  height: auto;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.65;
+  opacity: 0.85;
   filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.45));
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 }
 
 .stages-timeline-row {
