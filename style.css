@@ -656,18 +656,15 @@ body, body.desktop-view {
 .about-wave-horizontal {
   position: absolute;
   left: 50%;
-  top: 48%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  width: 125vw;
+  width: 105vw;
   max-width: none;
-  height: 520px;
-  object-fit: cover;
+  height: auto;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.45;
-  filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.5));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+  opacity: 0.65;
+  filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.45));
 }
 
 .about-grid {
@@ -839,18 +836,15 @@ body, body.desktop-view {
 .org-wave-horizontal {
   position: absolute;
   left: 50%;
-  top: 58%;
+  top: 52%;
   transform: translate(-50%, -50%);
-  width: 125vw;
+  width: 105vw;
   max-width: none;
-  height: 500px;
-  object-fit: cover;
+  height: auto;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.40;
+  opacity: 0.60;
   filter: drop-shadow(0 0 50px rgba(145, 224, 253, 0.4));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
 .organizers-cards-grid {
@@ -957,16 +951,13 @@ body, body.desktop-view {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 125vw;
+  width: 105vw;
   max-width: none;
-  height: 500px;
-  object-fit: cover;
+  height: auto;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.38;
+  opacity: 0.55;
   filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.4));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
 .why-join-block {
@@ -1152,18 +1143,15 @@ body, body.desktop-view {
 .facts-wave-horizontal {
   position: absolute;
   left: 50%;
-  top: 52%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  width: 125vw;
+  width: 105vw;
   max-width: none;
-  height: 500px;
-  object-fit: cover;
+  height: auto;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.42;
+  opacity: 0.60;
   filter: drop-shadow(0 0 45px rgba(67, 106, 238, 0.4));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
 .facts-grid-4 {
@@ -1260,16 +1248,13 @@ body, body.desktop-view {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 125vw;
+  width: 105vw;
   max-width: none;
-  height: 500px;
-  object-fit: cover;
+  height: auto;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.35;
+  opacity: 0.55;
   filter: drop-shadow(0 0 45px rgba(67, 106, 238, 0.35));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
 .tracks-grid-12 {
@@ -1354,18 +1339,15 @@ body, body.desktop-view {
 .stages-glass-chain-horizontal {
   position: absolute;
   left: 50%;
-  top: 75%;
+  top: 64%;
   transform: translate(-50%, -50%);
-  width: 125vw;
+  width: 105vw;
   max-width: none;
-  height: 440px;
-  object-fit: cover;
+  height: auto;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.65;
+  opacity: 0.85;
   filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.45));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
 .stages-timeline-row {
