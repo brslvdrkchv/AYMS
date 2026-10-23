@@ -655,16 +655,18 @@ body, body.desktop-view {
 /* Designer's 3D Blue Wave Ribbon 1 (Horizontal Seamless) */
 .about-wave-horizontal {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 105vw;
-  max-width: none;
+  left: -5vw;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 85vw;
+  max-width: 1600px;
   height: auto;
   pointer-events: none;
   z-index: 1;
   opacity: 0.65;
   filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.45));
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 90%, transparent 100%);
 }
 
 .about-grid {
@@ -835,16 +837,19 @@ body, body.desktop-view {
 
 .org-wave-horizontal {
   position: absolute;
-  left: 50%;
-  top: 52%;
-  transform: translate(-50%, -50%);
-  width: 105vw;
-  max-width: none;
+  right: -6vw;
+  left: auto;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 80vw;
+  max-width: 1500px;
   height: auto;
   pointer-events: none;
   z-index: 1;
   opacity: 0.60;
   filter: drop-shadow(0 0 50px rgba(145, 224, 253, 0.4));
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 92%, transparent 100%);
 }
 
 .organizers-cards-grid {
@@ -948,16 +953,18 @@ body, body.desktop-view {
 
 .why-wave-horizontal {
   position: absolute;
-  left: 50%;
+  left: -6vw;
   top: 50%;
-  transform: translate(-50%, -50%);
-  width: 105vw;
-  max-width: none;
+  transform: translateY(-50%);
+  width: 80vw;
+  max-width: 1500px;
   height: auto;
   pointer-events: none;
   z-index: 1;
   opacity: 0.55;
   filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.4));
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 92%, transparent 100%);
 }
 
 .why-join-block {
@@ -1142,16 +1149,19 @@ body, body.desktop-view {
 
 .facts-wave-horizontal {
   position: absolute;
-  left: 50%;
+  right: -6vw;
+  left: auto;
   top: 50%;
-  transform: translate(-50%, -50%);
-  width: 105vw;
-  max-width: none;
+  transform: translateY(-50%);
+  width: 80vw;
+  max-width: 1500px;
   height: auto;
   pointer-events: none;
   z-index: 1;
   opacity: 0.60;
   filter: drop-shadow(0 0 45px rgba(67, 106, 238, 0.4));
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 92%, transparent 100%);
 }
 
 .facts-grid-4 {
@@ -1232,29 +1242,19 @@ body, body.desktop-view {
 
 .sections-cosmic-glow {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: 90vw;
-  height: 60vh;
-  background: radial-gradient(ellipse at 50% 50%, rgba(67, 106, 238, 0.18) 0%, transparent 65%);
-  filter: blur(90px);
+  height: 70vh;
+  background: radial-gradient(ellipse at 50% 50%, rgba(67, 106, 238, 0.22) 0%, rgba(25, 31, 79, 0.12) 45%, transparent 70%);
+  filter: blur(80px);
   pointer-events: none;
   z-index: 1;
 }
 
 .sections-wave-horizontal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 105vw;
-  max-width: none;
-  height: auto;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0.55;
-  filter: drop-shadow(0 0 45px rgba(67, 106, 238, 0.35));
+  display: none;
 }
 
 .tracks-grid-12 {
@@ -1339,15 +1339,17 @@ body, body.desktop-view {
 .stages-glass-chain-horizontal {
   position: absolute;
   left: 50%;
-  top: 64%;
+  top: 56%;
   transform: translate(-50%, -50%);
-  width: 105vw;
-  max-width: none;
+  width: 90vw;
+  max-width: 1700px;
   height: auto;
   pointer-events: none;
   z-index: 1;
   opacity: 0.85;
   filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.45));
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
 }
 
 .stages-timeline-row {
