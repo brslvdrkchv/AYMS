@@ -157,8 +157,9 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function openModal(type) {
-    const data = modalData[type];
+    const data = (window.I18n && window.I18n.getModalData) ? window.I18n.getModalData(type) : modalData[type];
     if (!data) return;
+    modalContainer.dataset.activeType = type;
     modalTitle.textContent = data.title;
     modalBody.innerHTML = data.content;
     modalContainer.classList.add('active');
@@ -169,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeModal() {
     modalContainer.classList.remove('active');
     modalContainer.setAttribute('aria-hidden', 'true');
+    modalContainer.removeAttribute('data-active-type');
     document.body.style.overflow = '';
   }
 

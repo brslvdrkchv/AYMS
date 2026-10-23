@@ -22,6 +22,15 @@
       </button>
     </aside>
 
+    <!-- Floating Language Switcher for Mobile Theme -->
+    <div class="mobile-lang-switcher-bar">
+      <div class="lang-switcher" role="group" aria-label="Вибір мови / Language selection">
+        <button type="button" class="lang-btn active" data-lang="uk" aria-label="Українська версія">UA</button>
+        <span class="lang-divider">|</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English version">EN</button>
+      </div>
+    </div>
+
     <main class="site-container">
       <!-- 1. Hero Section -->
       <header id="m-hero" class="figma-section">
@@ -182,18 +191,32 @@
       </a>
 
       <nav class="nav-links" aria-label="Головна навігація">
-        <a href="#about" class="nav-link">Про захід</a>
-        <a href="#organizers" class="nav-link">Організатори</a>
-        <a href="#why-join" class="nav-link">Переваги</a>
-        <a href="#facts" class="nav-link">Факти</a>
-        <a href="#sections" class="nav-link">Секції</a>
-        <a href="#stages" class="nav-link">Регламент</a>
-        <a href="#contacts" class="nav-link">Контакти</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">Про захід</a>
+        <a href="#organizers" class="nav-link" data-i18n="nav_organizers">Організатори</a>
+        <a href="#why-join" class="nav-link" data-i18n="nav_why_join">Переваги</a>
+        <a href="#facts" class="nav-link" data-i18n="nav_facts">Факти</a>
+        <a href="#sections" class="nav-link" data-i18n="nav_sections">Секції</a>
+        <a href="#stages" class="nav-link" data-i18n="nav_stages">Регламент</a>
+        <a href="#contacts" class="nav-link" data-i18n="nav_contacts">Контакти</a>
+        <div class="mobile-drawer-lang">
+          <span class="mobile-drawer-lang-label" data-i18n="nav_lang_label">Мова</span>
+          <div class="lang-switcher" role="group" aria-label="Вибір мови / Language selection">
+            <button type="button" class="lang-btn active" data-lang="uk">UA</button>
+            <span class="lang-divider">|</span>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </div>
       </nav>
 
       <div class="nav-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher" role="group" aria-label="Вибір мови / Language selection">
+          <button type="button" class="lang-btn active" data-lang="uk" aria-label="Українська версія">UA</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang="en" aria-label="English version">EN</button>
+        </div>
         <button type="button" class="figma-gradient-btn nav-cta-btn" id="nav-btn-register">
-          <span>Зареєструватися</span>
+          <span data-i18n="nav_register">Зареєструватися</span>
         </button>
         <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Меню навігації" aria-expanded="false">
           <span class="hamburger-line"></span>
@@ -223,7 +246,7 @@
       <div class="hero-content-wrapper">
         <div class="hero-anniversary-badge">
           <span class="badge-pulse"></span>
-          <span>185 РОКІВ НМУ • 145 РОКІВ СНТ • 26–27 ЛИСТОПАДА 2026 • КИЇВ</span>
+          <span data-i18n="hero_badge">185 РОКІВ НМУ • 145 РОКІВ СНТ • 26–27 ЛИСТОПАДА 2026 • КИЇВ</span>
         </div>
 
         <!-- Giant Falcon Sport One Title -->
@@ -234,25 +257,25 @@
 
         <!-- Slogans Under Crescent (matching Figma positioning) -->
         <div class="hero-slogans-container">
-          <span class="hero-slogan-left">Inspires to solve</span>
+          <span class="hero-slogan-left" data-i18n="hero_slogan_left">Inspires to solve</span>
           <span class="hero-slogan-dot"></span>
-          <span class="hero-slogan-right">and move forward</span>
+          <span class="hero-slogan-right" data-i18n="hero_slogan_right">and move forward</span>
         </div>
 
         <div class="hero-cta-group">
           <button type="button" class="figma-gradient-btn btn-hero-cta" id="hero-btn-register">
-            <span>Зареєструватися на конференцію</span>
+            <span data-i18n="hero_cta_register">Зареєструватися на конференцію</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </button>
           <a href="#about" class="btn-glass btn-hero-secondary">
-            <span>Про захід</span>
+            <span data-i18n="hero_cta_about">Про захід</span>
           </a>
         </div>
       </div>
 
       <a href="#about" class="hero-scroll-indicator" aria-label="Гортати до опису заходу">
         <span class="mouse-icon"><span class="mouse-wheel"></span></span>
-        <span class="scroll-label">Гортати вниз</span>
+        <span class="scroll-label" data-i18n="hero_scroll_down">Гортати вниз</span>
       </a>
     </section>
 
@@ -273,42 +296,38 @@
           <div class="milestones-row">
             <div class="milestone-card">
               <span class="milestone-num falcon-title">185</span>
-              <span class="milestone-text">років НМУ імені О.О. Богомольця</span>
+              <span class="milestone-text" data-i18n="about_stat_1">років НМУ імені О.О. Богомольця</span>
             </div>
             <div class="milestone-card">
               <span class="milestone-num falcon-title">145</span>
-              <span class="milestone-text">років СНТ імені О.А. Киселя</span>
+              <span class="milestone-text" data-i18n="about_stat_2">років СНТ імені О.А. Киселя</span>
             </div>
             <div class="milestone-card">
               <span class="milestone-num falcon-title">90</span>
-              <span class="milestone-text">років першій конференції (1936)</span>
+              <span class="milestone-text" data-i18n="about_stat_3">років першій конференції (1936)</span>
             </div>
           </div>
         </div>
 
         <!-- Right: Full Letter Text from Figma -->
         <div class="about-text-column">
-          <div class="section-tag">// ПРО ЗАХІД</div>
-          <h2 class="about-greeting-title">
-            Шановні колеги – студенти, лікарі-інтерни, аспіранти та молоді науковці!
-          </h2>
+          <div class="section-tag" data-i18n="nav_about">// ПРО ЗАХІД</div>
+          <h2 class="about-greeting-title" data-i18n="about_title">Шановні колеги – студенти, лікарі-інтерни, аспіранти та молоді науковці!</h2>
 
           <div class="about-full-letter">
-            <p class="about-letter-p">
+            <p class="about-letter-p" data-i18n="about_p1">
               Справжня наука ніколи не починається з наукових ступенів чи формальних публікацій. Вона народжується біля ліжка пацієнта, у незручних клінічних запитаннях, біля лабораторного мікроскопа та в нічних годинах розрахунку статистичних моделей. Організаційний комітет <strong>Annual Young Medical Scientists’ Conference 2026</strong> радий вітати кожного, хто обирає не просто спостерігати за еволюцією медицини, а рухати її вперед своїми ідеями, експериментами й аналітикою.
             </p>
 
-            <p class="about-letter-p">
+            <p class="about-letter-p" data-i18n="about_p2">
               Цьогорічний AYMSConf є особливою віхою, що поєднує глибоку історію з поглядом у майбутнє. Ми відзначаємо <strong>185-річчя</strong> Національного медичного університету імені О. О. Богомольця та <strong>145-річчя</strong> нашого Студентського наукового товариства. До того ж, рівно <strong>90 років тому</strong>, у далекому 1936-му, Товариство вперше організувало студентську наукову конференцію, довівши, що голос молодого дослідника здатен звучати потужно й на рівних із визнаними вченими.
             </p>
 
-            <p class="about-letter-p">
+            <p class="about-letter-p" data-i18n="about_p3">
               Сьогодні ми не просто продовжуємо майже столітню традицію — ми перезавантажуємо академічний простір під виклики сучасності. AYMSConf 2026 створений як відкрита платформа для тих, хто цінує доказову медицину, бездоганний дизайн досліджень, прозору наукову етику та чесну експертну дискусію без формалізму. Тут фундаментальна біомедицина зустрічається з практичною хірургією, терапією та новими технологіями, перетворюючи сміливі гіпотези на реальні клінічні рішення.
             </p>
 
-            <p class="about-letter-p about-letter-conclusion">
-              Запрошуємо студентів, інтернів, аспірантів та молодих науковців представити свої результати, знайти однодумців для спільних міждисциплінарних проєктів і заявити про себе на головній медичній молодіжній події року. <span class="highlight-orange">До зустрічі на AYMSConf 2026!</span>
-            </p>
+            <p class="about-letter-p about-letter-conclusion"><span data-i18n="about_p4">Запрошуємо студентів, інтернів, аспірантів та молодих науковців представити свої результати, знайти однодумців для спільних міждисциплінарних проєктів і заявити про себе на головній медичній молодіжній події року.</span> <span class="highlight-orange" data-i18n="about_farewell">До зустрічі на AYMSConf 2026!</span></p>
           </div>
         </div>
       </div>
@@ -322,9 +341,9 @@
 
       <div class="section-container">
         <div class="section-header-center">
-          <span class="section-tag">// ОРГАНІЗАТОРИ</span>
-          <h2 class="section-title falcon-title">ОРГАНІЗАТОРИ</h2>
-          <p class="section-subtitle">Інституції, що об'єднують досвід поколінь та молодіжні наукові ініціативи</p>
+          <span class="section-tag" data-i18n="org_tag">// ОРГАНІЗАТОРИ</span>
+          <h2 class="section-title falcon-title" data-i18n="org_title">ОРГАНІЗАТОРИ</h2>
+          <p class="section-subtitle" data-i18n="org_subtitle">Інституції, що об'єднують досвід поколінь та молодіжні наукові ініціативи</p>
         </div>
 
         <div class="organizers-cards-grid">
@@ -378,27 +397,27 @@
       <div class="section-container">
         <!-- Top Block: Why Join -->
         <div class="why-join-block">
-          <div class="section-tag">// ПЕРЕВАГИ УЧАСТІ</div>
-          <h2 class="section-title falcon-title">ЧОМУ ВАРТО СТАТИ ЧАСТИНОЮ AYMS CONF 2026?</h2>
+          <div class="section-tag" data-i18n="why_tag">// ПЕРЕВАГИ УЧАСТІ</div>
+          <h2 class="section-title falcon-title" data-i18n="why_title">ЧОМУ ВАРТО СТАТИ ЧАСТИНОЮ AYMS CONF 2026?</h2>
           
           <div class="why-join-layout">
             <div class="why-gradient-bar" aria-hidden="true"></div>
             <div class="reasons-list">
               <div class="reason-item">
-                <span class="reason-title">Апробація досліджень на національному рівні:</span>
-                <span class="reason-desc">можливість виступити перед фаховим журі та провідними клініцистами України.</span>
+                <span class="reason-title" data-i18n="why_b1_title">Апробація досліджень на національному рівні:</span>
+                <span class="reason-desc" data-i18n="why_b1_desc">можливість виступити перед фаховим журі та провідними клініцистами України.</span>
               </div>
               <div class="reason-item">
-                <span class="reason-title">Публікація тез у збірнику матеріалів:</span>
-                <span class="reason-desc">збірник матеріалів конференції з присвоєнням ISBN та обов'язковим індексуванням.</span>
+                <span class="reason-title" data-i18n="why_b2_title">Публікація тез у збірнику матеріалів:</span>
+                <span class="reason-desc" data-i18n="why_b2_desc">збірник матеріалів конференції з присвоєнням ISBN та обов'язковим індексуванням.</span>
               </div>
               <div class="reason-item">
-                <span class="reason-title">Чесна та конструктивна експертна оцінка:</span>
-                <span class="reason-desc">фідбек від експертів галузі для подальшого вдосконалення ваших напрацювань.</span>
+                <span class="reason-title" data-i18n="why_b3_title">Чесна та конструктивна експертна оцінка:</span>
+                <span class="reason-desc" data-i18n="why_b3_desc">фідбек від експертів галузі для подальшого вдосконалення ваших напрацювань.</span>
               </div>
               <div class="reason-item">
-                <span class="reason-title">Спільнота однодумців:</span>
-                <span class="reason-desc">знайомство з провідними експертами, майбутніми колегами та потенційними науковими керівниками з усієї країни.</span>
+                <span class="reason-title" data-i18n="why_b4_title">Спільнота однодумців:</span>
+                <span class="reason-desc" data-i18n="why_b4_desc">знайомство з провідними експертами, майбутніми колегами та потенційними науковими керівниками з усієї країни.</span>
               </div>
             </div>
           </div>
@@ -406,44 +425,36 @@
 
         <!-- Middle Block: Bonuses with White/Glass Cards (Figma Rectangle 324-327) -->
         <div class="bonuses-block">
-          <div class="section-tag">// ЩО ОТРИМУЄ УЧАСНИК</div>
-          <h2 class="section-title falcon-title">БОНУСИ ТА ЩО ОТРИМУЄ УЧАСНИК?</h2>
+          <div class="section-tag" data-i18n="bonuses_tag">// ЩО ОТРИМУЄ УЧАСНИК</div>
+          <h2 class="section-title falcon-title" data-i18n="bonuses_title">БОНУСИ ТА ЩО ОТРИМУЄ УЧАСНИК?</h2>
 
           <div class="bonuses-grid-4">
             <div class="figma-bonus-card">
               <div class="bonus-icon-box">
                 <img src="images/figma_raw/icon_certificate.svg" alt="Сертифікат">
               </div>
-              <p class="bonus-text-italic">
-                Офіційний сертифікат учасника із зазначенням форми участі (для доповідачів).
-              </p>
+              <p class="bonus-text-italic" data-i18n="bonus_1_desc">Офіційний сертифікат учасника із зазначенням форми участі (для доповідачів).</p>
             </div>
 
             <div class="figma-bonus-card">
               <div class="bonus-icon-box">
                 <img src="images/figma_raw/icon_diploma.svg" alt="Диплом">
               </div>
-              <p class="bonus-text-italic">
-                Дипломи I, II, III ступенів та спеціальні відзнаки оргкомітету для переможців секцій.
-              </p>
+              <p class="bonus-text-italic" data-i18n="bonus_2_desc">Дипломи I, II, III ступенів та спеціальні відзнаки оргкомітету для переможців секцій.</p>
             </div>
 
             <div class="figma-bonus-card">
               <div class="bonus-icon-box">
                 <img src="images/figma_raw/icon_welcome_pack.svg" alt="Пакет">
               </div>
-              <p class="bonus-text-italic">
-                Пакет учасника (Welcome Pack) для очних делегатів.
-              </p>
+              <p class="bonus-text-italic" data-i18n="bonus_3_desc">Пакет учасника (Welcome Pack) для очних делегатів.</p>
             </div>
 
             <div class="figma-bonus-card">
               <div class="bonus-icon-box">
                 <img src="images/figma_raw/icon_coffee_break.svg" alt="Кава">
               </div>
-              <p class="bonus-text-italic">
-                Доступ до нетворкінг-зон та кава-брейків для неформального обговорення наукових колаборацій.
-              </p>
+              <p class="bonus-text-italic" data-i18n="bonus_4_desc">Доступ до нетворкінг-зон та кава-брейків для неформального обговорення наукових колаборацій.</p>
             </div>
           </div>
         </div>
@@ -451,12 +462,10 @@
         <!-- Free for Students Figma Banner -->
         <div class="free-student-figma-banner">
           <div class="free-banner-text-box">
-            <span class="free-highlight-tag">ГРАНТОВА ПІДТРИМКА</span>
-            <span class="free-text-title">Для студентів участь у конференції є безкоштовною</span>
+            <span class="free-highlight-tag" data-i18n="free_badge">ГРАНТОВА ПІДТРИМКА</span>
+            <span class="free-text-title" data-i18n="free_title">Для студентів участь у конференції є безкоштовною</span>
           </div>
-          <button type="button" class="figma-gradient-btn" id="banner-btn-register">
-            Подати роботу
-          </button>
+          <button type="button" class="figma-gradient-btn" id="banner-btn-register" data-i18n="free_btn">Подати роботу</button>
         </div>
       </div>
     </section>
@@ -470,9 +479,9 @@
 
       <div class="section-container">
         <div class="section-header-center">
-          <span class="section-tag">// ПАРАМЕТРИ</span>
-          <h2 class="section-title falcon-title">КЛЮЧОВІ ФАКТИ ПОДІЇ</h2>
-          <p class="section-subtitle">Основні організаційні параметри для планування вашої участі</p>
+          <span class="section-tag" data-i18n="facts_tag">// ПАРАМЕТРИ</span>
+          <h2 class="section-title falcon-title" data-i18n="facts_title">КЛЮЧОВІ ФАКТИ ПОДІЇ</h2>
+          <p class="section-subtitle" data-i18n="facts_subtitle">Основні організаційні параметри для планування вашої участі</p>
         </div>
 
         <div class="facts-grid-4">
@@ -480,45 +489,36 @@
           <div class="fact-glass-card">
             <div class="fact-number-glow falcon-title">01</div>
             <div class="fact-icon">🌐</div>
-            <h3 class="fact-title">Формат</h3>
-            <div class="fact-value">Змішаний</div>
-            <p class="fact-desc">
-              Офлайн-події в аудиторіях НМУ + платформа для дистанційних учасників.
-            </p>
+            <h3 class="fact-title" data-i18n="fact_1_title">Формат</h3>
+            <div class="fact-value" data-i18n="fact_1_value">Змішаний</div>
+            <p class="fact-desc" data-i18n="fact_1_desc">Офлайн-події в аудиторіях НМУ + платформа для дистанційних учасників.</p>
           </div>
 
           <!-- Fact 2 -->
           <div class="fact-glass-card">
             <div class="fact-number-glow falcon-title">02</div>
             <div class="fact-icon">📅</div>
-            <h3 class="fact-title">Дати проведення</h3>
+            <h3 class="fact-title" data-i18n="fact_2_title">Дати проведення</h3>
             <div class="fact-value">26–27.11.2026</div>
-            <p class="fact-desc">
-              <strong>26.11.26</strong> (секційні засідання)<br>
-              <strong>27.11.26</strong> (воркшопи)
-            </p>
+            <p class="fact-desc" data-i18n-html="fact_2_desc"><strong>26.11.26</strong> (секційні засідання)<br><strong>27.11.26</strong> (воркшопи)</p>
           </div>
 
           <!-- Fact 3 -->
           <div class="fact-glass-card">
             <div class="fact-number-glow falcon-title">03</div>
             <div class="fact-icon">🗣️</div>
-            <h3 class="fact-title">Мова конференції</h3>
+            <h3 class="fact-title" data-i18n="fact_3_title">Мова конференції</h3>
             <div class="fact-value">UA / EN</div>
-            <p class="fact-desc">
-              Українська та англійська мови. Можливість представлення міжнародних робіт.
-            </p>
+            <p class="fact-desc" data-i18n="fact_3_desc">Українська та англійська мови. Можливість представлення міжнародних робіт.</p>
           </div>
 
           <!-- Fact 4 -->
           <div class="fact-glass-card highlight-card">
             <div class="fact-number-glow falcon-title">04</div>
             <div class="fact-icon">🎓</div>
-            <h3 class="fact-title">Вартість участі</h3>
+            <h3 class="fact-title" data-i18n="fact_4_title">Вартість участі</h3>
             <div class="fact-value accent-green">0 ₴ (Безкоштовно)</div>
-            <p class="fact-desc">
-              Для студентів участь у конференції є безкоштовною.
-            </p>
+            <p class="fact-desc" data-i18n="fact_4_desc">Для студентів участь у конференції є безкоштовною.</p>
           </div>
         </div>
       </div>
@@ -531,59 +531,59 @@
 
       <div class="section-container">
         <div class="section-header-center">
-          <span class="section-tag">// НАУКОВІ НАПРЯМИ</span>
-          <h2 class="section-title falcon-title">СЕКЦІЇ</h2>
-          <p class="section-subtitle">12 фахових напрямів наукової програми конференції</p>
+          <span class="section-tag" data-i18n="sections_tag">// НАУКОВІ НАПРЯМИ</span>
+          <h2 class="section-title falcon-title" data-i18n="sections_title">СЕКЦІЇ</h2>
+          <p class="section-subtitle" data-i18n="sections_subtitle">12 фахових напрямів наукової програми конференції</p>
         </div>
 
         <div class="tracks-grid-12">
           <div class="track-card">
             <span class="track-code falcon-title">01</span>
-            <h4>Внутрішня медицина & кардіологія</h4>
+            <h4 data-i18n="track_1">Внутрішня медицина & кардіологія</h4>
           </div>
           <div class="track-card">
             <span class="track-code falcon-title">02</span>
-            <h4>Загальна та малоінвазивна хірургія</h4>
+            <h4 data-i18n="track_2">Загальна та малоінвазивна хірургія</h4>
           </div>
           <div class="track-card">
             <span class="track-code falcon-title">03</span>
-            <h4>Анестезіологія та інтенсивна терапія</h4>
+            <h4 data-i18n="track_3">Анестезіологія та інтенсивна терапія</h4>
           </div>
           <div class="track-card">
             <span class="track-code falcon-title">04</span>
-            <h4>Педіатрія та неонатологія</h4>
+            <h4 data-i18n="track_4">Педіатрія та неонатологія</h4>
           </div>
           <div class="track-card">
             <span class="track-code falcon-title">05</span>
-            <h4>Акушерство та гінекологія</h4>
+            <h4 data-i18n="track_5">Акушерство та гінекологія</h4>
           </div>
           <div class="track-card">
             <span class="track-code falcon-title">06</span>
-            <h4>Неврологія та нейрохірургія</h4>
+            <h4 data-i18n="track_6">Неврологія та нейрохірургія</h4>
           </div>
           <div class="track-card">
             <span class="track-code falcon-title">07</span>
-            <h4>Психіатрія та медична психологія</h4>
+            <h4 data-i18n="track_7">Психіатрія та медична психологія</h4>
           </div>
           <div class="track-card">
             <span class="track-code falcon-title">08</span>
-            <h4>Стоматологія та щелепно-лицева хірургія</h4>
+            <h4 data-i18n="track_8">Стоматологія та щелепно-лицева хірургія</h4>
           </div>
           <div class="track-card">
             <span class="track-code falcon-title">09</span>
-            <h4>Офтальмологія та оториноларингологія</h4>
+            <h4 data-i18n="track_9">Офтальмологія та оториноларингологія</h4>
           </div>
           <div class="track-card">
             <span class="track-code falcon-title">10</span>
-            <h4>Фармація та клінічна фармакологія</h4>
+            <h4 data-i18n="track_10">Фармація та клінічна фармакологія</h4>
           </div>
           <div class="track-card">
             <span class="track-code falcon-title">11</span>
-            <h4>Фундаментальна біомедицина & генетика</h4>
+            <h4 data-i18n="track_11">Фундаментальна біомедицина & генетика</h4>
           </div>
           <div class="track-card">
             <span class="track-code falcon-title">12</span>
-            <h4>Військова медицина & такмед</h4>
+            <h4 data-i18n="track_12">Військова медицина & такмед</h4>
           </div>
         </div>
 
@@ -607,44 +607,44 @@
 
       <div class="section-container">
         <div class="section-header-center">
-          <span class="section-tag">// РЕГЛАМЕНТ ТА ЕТАПИ</span>
-          <h2 class="section-title falcon-title">РЕГЛАМЕНТ ТА ЕТАПИ ВІДБОРУ</h2>
-          <p class="section-subtitle">Кроки участі від подання матеріалів до публікації та нагородження</p>
+          <span class="section-tag" data-i18n="stages_tag">// РЕГЛАМЕНТ ТА ЕТАПИ</span>
+          <h2 class="section-title falcon-title" data-i18n="stages_title">РЕГЛАМЕНТ ТА ЕТАПИ ВІДБОРУ</h2>
+          <p class="section-subtitle" data-i18n="stages_subtitle">Кроки участі від подання матеріалів до публікації та нагородження</p>
         </div>
 
         <!-- 4 Steps with Designer's Roman Numeral SVGs -->
         <div class="stages-timeline-row">
           <div class="timeline-step">
             <div class="step-numeral-svg"><img src="images/figma_raw/stage_I.svg" alt="I"></div>
-            <h4>Подання тез</h4>
-            <p>Заповнення форми та завантаження тез згідно з вимогами.</p>
+            <h4 data-i18n="stage_1_title">Подання тез</h4>
+            <p data-i18n="stage_1_desc">Заповнення форми та завантаження тез згідно з вимогами.</p>
           </div>
           <div class="timeline-step-arrow"></div>
 
           <div class="timeline-step">
             <div class="step-numeral-svg"><img src="images/figma_raw/stage_II.svg" alt="II"></div>
-            <h4>Рецензування</h4>
-            <p>Двоетапна сліпа експертна оцінка науковим журі.</p>
+            <h4 data-i18n="stage_2_title">Рецензування</h4>
+            <p data-i18n="stage_2_desc">Двоетапна сліпа експертна оцінка науковим журі.</p>
           </div>
           <div class="timeline-step-arrow"></div>
 
           <div class="timeline-step">
             <div class="step-numeral-svg"><img src="images/figma_raw/stage_III.svg" alt="III"></div>
-            <h4>Запрошення</h4>
-            <p>Оприлюднення програми та розсилка офіційних запрошень.</p>
+            <h4 data-i18n="stage_3_title">Запрошення</h4>
+            <p data-i18n="stage_3_desc">Оприлюднення програми та розсилка офіційних запрошень.</p>
           </div>
           <div class="timeline-step-arrow"></div>
 
           <div class="timeline-step">
             <div class="step-numeral-svg"><img src="images/figma_raw/stage_IV.svg" alt="IV"></div>
-            <h4>Виступ & Фінал</h4>
-            <p>Захист дослідження, дискусія та нагородження переможців.</p>
+            <h4 data-i18n="stage_4_title">Виступ & Фінал</h4>
+            <p data-i18n="stage_4_desc">Захист дослідження, дискусія та нагородження переможців.</p>
           </div>
         </div>
 
         <!-- Important Links Heading -->
         <div class="criteria-header-center">
-          <h3 class="criteria-section-title falcon-title">ВАЖЛИВІ ПОСИЛАННЯ</h3>
+          <h3 class="criteria-section-title falcon-title" data-i18n="criteria_title">ВАЖЛИВІ ПОСИЛАННЯ</h3>
         </div>
 
         <!-- 3 Signature Glass Criteria Cards (Rectangle 316, 330, 331) -->
@@ -653,7 +653,7 @@
             <div class="criteria-card-inner">
               <h3 class="criteria-heading">Вимоги до<br>оформлення тез</h3>
               <div class="criteria-action-link">
-                <span>Відкрити вимоги</span>
+                <span data-i18n="btn_theses">Відкрити вимоги</span>
                 <span class="arrow-glyph">→</span>
               </div>
             </div>
@@ -663,7 +663,7 @@
             <div class="criteria-card-inner">
               <h3 class="criteria-heading">Зразок<br>оформлення<br>роботи</h3>
               <div class="criteria-action-link">
-                <span>Переглянути зразок</span>
+                <span data-i18n="btn_sample">Переглянути зразок</span>
                 <span class="arrow-glyph">→</span>
               </div>
             </div>
@@ -673,7 +673,7 @@
             <div class="criteria-card-inner">
               <h3 class="criteria-heading">Вимоги до<br>виступу й<br>слайдів</h3>
               <div class="criteria-action-link">
-                <span>Читати інструкцію</span>
+                <span data-i18n="btn_presentation">Читати інструкцію</span>
                 <span class="arrow-glyph">→</span>
               </div>
             </div>
@@ -694,9 +694,9 @@
           <div class="logistics-card safety-card">
             <div class="logistics-header">
               <span class="logistics-icon">🛡️</span>
-              <h3>Безпековий протокол</h3>
+              <h3 data-i18n="security_title">Безпековий протокол</h3>
             </div>
-            <p>
+            <p data-i18n="security_desc">
               Усі локації проведення конференції забезпечені укриттями цивільного захисту. У разі оголошення сигналу «Повітряна тривога» засідання та майстер-класи призупиняються, а учасники організовано переходять до укриттів, де (за технічної можливості) робота секцій продовжується. Безпека кожного делегата є нашим безумовним пріоритетом.
             </p>
           </div>
@@ -704,9 +704,9 @@
           <div class="logistics-card travel-card">
             <div class="logistics-header">
               <span class="logistics-icon">🚆</span>
-              <h3>Проживання та проїзд</h3>
+              <h3 data-i18n="logistics_title">Проживання та проїзд</h3>
             </div>
-            <p>
+            <p data-i18n="logistics_desc">
               Витрати на проїзд та проживання покриваються учасниками самостійно або за рахунок сторони, що відряджає. За необхідності організаційний комітет надає інформаційну та координаційну підтримку щодо поселення іногородніх учасників у гуртожитках університету або партнерських закладах розміщення. За запитом учасників, чиї роботи прийнято до програми, організаційний комітет надсилає офіційні іменні листи-запрошення для оформлення відрядження за місцем навчання або роботи.
             </p>
           </div>
@@ -729,16 +729,16 @@
             </div>
 
             <div class="footer-links-col">
-              <h4 class="footer-col-title">Навігація</h4>
+              <h4 class="footer-col-title" data-i18n="footer_nav_title">Навігація</h4>
               <ul class="footer-list">
-                <li><a href="#about">Про нас</a></li>
-                <li><a href="#sections">Секції</a></li>
-                <li><a href="#stages">Регламент</a></li>
+                <li><a href="#about" data-i18n="footer_nav_about">Про нас</a></li>
+                <li><a href="#sections" data-i18n="footer_nav_sections">Секції</a></li>
+                <li><a href="#stages" data-i18n="footer_nav_stages">Регламент</a></li>
               </ul>
             </div>
 
             <div class="footer-contacts-col">
-              <h4 class="footer-col-title">Контакти</h4>
+              <h4 class="footer-col-title" data-i18n="footer_contacts_title">Контакти</h4>
               <ul class="footer-contacts-list">
                 <li>
                   <span class="contact-lbl">Email:</span>
@@ -760,7 +760,7 @@
             </div>
 
             <div class="footer-cta-col">
-              <h4 class="footer-col-title">Участь у події</h4>
+              <h4 class="footer-col-title" data-i18n="footer_join_title">Участь у події</h4>
               <p class="footer-cta-desc">Приєднуйтесь до головної медичної молодіжної події року.</p>
               <button type="button" class="figma-gradient-btn footer-reg-btn" id="footer-btn-register">
                 Зареєструватися
@@ -805,6 +805,7 @@
     </div>
   </div>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

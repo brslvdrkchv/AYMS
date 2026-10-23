@@ -215,6 +215,93 @@ body, body.desktop-view {
   gap: 16px;
 }
 
+/* --- Language Switcher (Desktop & Mobile) --- */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-glass);
+  border-radius: 999px;
+  padding: 3px 5px;
+  gap: 3px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: all 0.25s ease;
+  z-index: 100;
+  user-select: none;
+}
+
+.lang-switcher:hover {
+  border-color: rgba(145, 224, 253, 0.4);
+  box-shadow: 0 0 16px rgba(67, 106, 238, 0.25);
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  color: var(--text-primary);
+}
+
+.lang-btn.active {
+  background: linear-gradient(135deg, rgba(67, 106, 238, 0.75), rgba(145, 224, 253, 0.45));
+  color: #FFFFFF;
+  box-shadow: 0 0 12px rgba(67, 106, 238, 0.6);
+  border: 1px solid rgba(145, 224, 253, 0.5);
+}
+
+.lang-divider {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 11px;
+  user-select: none;
+}
+
+/* Floating language switcher for mobile-experience */
+.mobile-lang-switcher-bar {
+  position: fixed;
+  bottom: 24px;
+  left: 20px;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-lang-switcher-bar .lang-switcher {
+  background: rgba(10, 15, 30, 0.85);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7), 0 0 12px rgba(67, 106, 238, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Mobile drawer lang switcher */
+.mobile-drawer-lang {
+  display: none;
+  width: 100%;
+  padding-top: 14px;
+  margin-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-drawer-lang-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
 .mobile-menu-toggle {
   display: none;
   background: rgba(255, 255, 255, 0.04);
@@ -2261,6 +2348,20 @@ body, body.desktop-view {
 }
 
 @media (max-width: 480px) {
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .lang-btn {
+    padding: 3px 8px;
+    font-size: 11px;
+  }
+
+  .nav-cta-btn {
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+
   .desktop-container {
     padding: 0 14px;
   }
@@ -2384,6 +2485,17 @@ body, body.desktop-view {
   }
   .mobile-experience {
     display: block !important;
+  }
+
+  /* When English is selected on mobile viewport, seamlessly present the responsive coded layout */
+  body[data-lang="en"] .desktop-experience {
+    display: block !important;
+  }
+  body[data-lang="en"] .mobile-experience {
+    display: none !important;
+  }
+  body[data-lang="en"], body[data-lang="en"] html {
+    background-color: var(--bg-deep) !important;
   }
 }
 
