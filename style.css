@@ -836,21 +836,21 @@ body, body.desktop-view {
   background: radial-gradient(ellipse at 85% 60%, rgba(67, 106, 238, 0.22) 0%, rgba(0, 0, 0, 0.8) 70%);
 }
 
-/* Designer's 3D Wave Ribbon 2 (Horizontal Seamless) */
 .org-wave-horizontal {
   position: absolute;
   left: 50%;
-  top: 55%;
+  top: 58%;
   transform: translate(-50%, -50%);
   width: 125vw;
   max-width: none;
-  height: auto;
+  height: 500px;
+  object-fit: cover;
   pointer-events: none;
   z-index: 1;
   opacity: 0.40;
   filter: drop-shadow(0 0 50px rgba(145, 224, 253, 0.4));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
 .organizers-cards-grid {
@@ -952,7 +952,6 @@ body, body.desktop-view {
   z-index: 1;
 }
 
-/* Designer's 3D Wave Ribbon Sweeping Horizontally */
 .why-wave-horizontal {
   position: absolute;
   left: 50%;
@@ -960,13 +959,14 @@ body, body.desktop-view {
   transform: translate(-50%, -50%);
   width: 125vw;
   max-width: none;
-  height: auto;
+  height: 500px;
+  object-fit: cover;
   pointer-events: none;
   z-index: 1;
   opacity: 0.38;
   filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.4));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
 .why-join-block {
@@ -1149,7 +1149,6 @@ body, body.desktop-view {
   opacity: 0.85;
 }
 
-/* Designer's 3D Blue Wave Ribbon Sweeping Horizontally across facts */
 .facts-wave-horizontal {
   position: absolute;
   left: 50%;
@@ -1157,13 +1156,14 @@ body, body.desktop-view {
   transform: translate(-50%, -50%);
   width: 125vw;
   max-width: none;
-  height: auto;
+  height: 500px;
+  object-fit: cover;
   pointer-events: none;
   z-index: 1;
   opacity: 0.42;
   filter: drop-shadow(0 0 45px rgba(67, 106, 238, 0.4));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
 .facts-grid-4 {
@@ -1255,7 +1255,6 @@ body, body.desktop-view {
   z-index: 1;
 }
 
-/* Designer's 3D Wave Ribbon Sweeping Horizontally Behind Track Cards */
 .sections-wave-horizontal {
   position: absolute;
   left: 50%;
@@ -1263,13 +1262,14 @@ body, body.desktop-view {
   transform: translate(-50%, -50%);
   width: 125vw;
   max-width: none;
-  height: auto;
+  height: 500px;
+  object-fit: cover;
   pointer-events: none;
   z-index: 1;
   opacity: 0.35;
   filter: drop-shadow(0 0 45px rgba(67, 106, 238, 0.35));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
 .tracks-grid-12 {
