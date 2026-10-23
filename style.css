@@ -270,11 +270,13 @@ body, body.desktop-view {
 /* Floating language switcher for mobile-experience */
 .mobile-lang-switcher-bar {
   position: fixed;
-  bottom: 24px;
-  left: 20px;
+  bottom: 14px;
+  left: 12px;
   z-index: 1100;
   display: flex;
   align-items: center;
+  transform: scale(0.84);
+  transform-origin: bottom left;
 }
 
 .mobile-lang-switcher-bar .lang-switcher {
@@ -282,6 +284,16 @@ body, body.desktop-view {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7), 0 0 12px rgba(67, 106, 238, 0.3);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+}
+
+.mobile-experience .floating-controls {
+  bottom: 14px;
+  right: 12px;
+}
+
+.mobile-experience .floating-btn {
+  width: 38px;
+  height: 38px;
 }
 
 /* Mobile drawer lang switcher */
@@ -2787,17 +2799,31 @@ body, body.desktop-view {
   position: relative;
   background-color: #000000;
   padding: 3vw 3.2vw 6vw;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .m-about-wave {
   position: absolute;
-  top: 2%;
-  left: -42%;
-  width: 78%;
-  height: auto;
+  top: 16.442vw;
+  left: -24.844vw;
+  width: 99.725vw;
+  height: 124.649vw;
+  transform-origin: 0 0;
+  transform: matrix(0.391383, 0.920228, 0.920228, -0.391383, 0, 0);
   z-index: 1;
-  opacity: 0.9;
+  pointer-events: none;
+}
+
+.m-about-wave-fade {
+  position: absolute;
+  top: 2vw;
+  left: 0;
+  width: 100%;
+  height: 98vw;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 56%, #000000 86%, #000000 100%),
+    linear-gradient(318deg, #000000 0%, #000000 50.6%, rgba(0, 0, 0, 0) 90%);
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -2860,17 +2886,42 @@ body, body.desktop-view {
   position: relative;
   background-color: #000000;
   padding: 4vw 3vw 13vw;
-  overflow: hidden;
+  overflow: visible;
+}
+
+.m-org-blue-glow {
+  position: absolute;
+  left: 30.8vw;
+  top: 12vw;
+  width: 38.5vw;
+  height: 38.5vw;
+  border-radius: 50%;
+  background: rgba(0, 0, 255, 0.5);
+  filter: blur(12vw);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .m-org-wave {
   position: absolute;
-  top: -6%;
-  right: -14%;
-  width: 95%;
-  height: auto;
+  top: -49.177vw;
+  left: 72.964vw;
+  width: 99.643vw;
+  height: 124.546vw;
+  transform-origin: 0 0;
+  transform: matrix(0.682427, 0.730954, -0.730954, 0.682427, 0, 0);
   z-index: 1;
-  opacity: 0.95;
+  pointer-events: none;
+}
+
+.m-org-wave-fade {
+  position: absolute;
+  left: 0;
+  bottom: -15vw;
+  width: 100%;
+  height: 30vw;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 70%, #000000 100%);
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -2917,7 +2968,7 @@ body, body.desktop-view {
 }
 
 .m-org-logo-kysil {
-  width: 78%;
+  width: 82%;
   max-height: 100%;
   object-fit: contain;
 }
@@ -3265,13 +3316,26 @@ body, body.desktop-view {
 
 .m-stages-faint-wave {
   position: absolute;
-  top: 12%;
-  left: -38%;
-  width: 85%;
-  height: auto;
-  opacity: 0.25;
+  top: -26.31vw;
+  left: 57.339vw;
+  width: 99.643vw;
+  height: 124.546vw;
+  transform-origin: 0 0;
+  transform: matrix(0.682427, 0.730954, -0.730954, 0.682427, 0, 0);
+  opacity: 0.35;
+  filter: brightness(2.05) contrast(0.65) saturate(1.25) blur(1.5px);
   pointer-events: none;
   z-index: 1;
+}
+
+.m-stages-wave-fade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(125deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 38%, #FFFFFF 64%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 58%, #FFFFFF 82%);
+  pointer-events: none;
+  z-index: 2;
 }
 
 .m-stages-list,
@@ -3350,30 +3414,36 @@ body, body.desktop-view {
 .m-chain-stage {
   position: relative;
   width: 100%;
-  aspect-ratio: 1920 / 1280;
-  margin-top: 2vw;
-  overflow: hidden;
+  height: 55vw;
+  margin-top: 3.5vw;
+  overflow: visible;
 }
 
 .m-chain-bg-img {
   position: absolute;
-  top: 16%;
-  left: -12%;
-  width: 126%;
-  height: auto;
-  transform: rotate(-19deg);
+  top: -31.042vw;
+  left: 122.367vw;
+  width: 84.611vw;
+  height: 150.420vw;
+  transform-origin: 0 0;
+  transform: matrix(0.160901, 0.986971, -0.986971, 0.160901, 0, 0);
+  -webkit-mask-image: linear-gradient(90deg, #000000 0%, #000000 64%, transparent 90%);
+  mask-image: linear-gradient(90deg, #000000 0%, #000000 64%, transparent 90%);
   z-index: 1;
   pointer-events: none;
 }
 
+.m-chain-bottom-fade {
+  display: none;
+}
+
 .m-chain-flare-img {
   position: absolute;
-  top: 47%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  width: 24%;
+  top: 18.23vw;
+  left: 54.95vw;
+  width: 26.31vw;
   height: auto;
-  z-index: 2;
+  z-index: 3;
   pointer-events: none;
   mix-blend-mode: screen;
 }
@@ -3386,8 +3456,8 @@ body, body.desktop-view {
 
 .m-link-glass-card {
   position: absolute;
-  width: 31.25%;
-  height: 29.5%;
+  width: 31.25vw;
+  height: 15.625vw;
   background: linear-gradient(145deg, rgba(16, 22, 42, 0.62) 0%, rgba(6, 10, 22, 0.72) 100%);
   border: 1px solid rgba(255, 255, 255, 0.65);
   border-radius: clamp(10px, 2.4vw, 24px);
@@ -3412,18 +3482,18 @@ body, body.desktop-view {
 }
 
 .m-link-card-1 {
-  left: 3.125%;
-  top: 3%;
+  left: 3.125vw;
+  top: 0;
 }
 
 .m-link-card-2 {
-  left: 34.375%;
-  top: 36%;
+  left: 34.375vw;
+  top: 17.708vw;
 }
 
 .m-link-card-3 {
-  left: 65.625%;
-  top: 68.5%;
+  left: 65.625vw;
+  top: 35.417vw;
 }
 
 .m-link-card-text {
