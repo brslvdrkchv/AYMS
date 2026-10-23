@@ -837,18 +837,19 @@ body, body.desktop-view {
 
 .org-wave-horizontal {
   position: absolute;
-  left: 50%;
+  right: 0;
+  left: auto;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   width: 104vw;
   max-width: none;
   height: auto;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.60;
+  opacity: 0.65;
   filter: drop-shadow(0 0 50px rgba(145, 224, 253, 0.4));
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 7%, black 100%);
 }
 
 .organizers-cards-grid {
