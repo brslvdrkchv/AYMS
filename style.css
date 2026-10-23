@@ -335,7 +335,7 @@ body, body.desktop-view {
   justify-content: center;
   padding: 100px 48px;
   box-sizing: border-box;
-  overflow: visible;
+  overflow: hidden;
   background-color: var(--bg-deep);
 }
 
@@ -381,19 +381,9 @@ body, body.desktop-view {
   line-height: 1.6;
 }
 
-/* Concrete texture background overlay for sections */
+/* Concrete texture background overlay for sections (replaced with continuous desktop overlay) */
 .section-bg-concrete-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('images/figma_raw/concrete_texture_bg.webp') repeat center center;
-  background-size: cover;
-  opacity: 0.08;
-  mix-blend-mode: overlay;
-  pointer-events: none;
-  z-index: 0;
+  display: none !important;
 }
 
 /* ==========================================================================
@@ -403,7 +393,6 @@ body, body.desktop-view {
   padding-top: 130px;
 }
 
-/* Designer Backgrounds */
 .hero-bg-smokey {
   position: absolute;
   top: 0;
@@ -416,20 +405,12 @@ body, body.desktop-view {
   mix-blend-mode: screen;
   pointer-events: none;
   z-index: 1;
+  -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 95%);
+  mask-image: linear-gradient(to bottom, black 65%, transparent 95%);
 }
 
 .hero-bg-concrete {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('images/figma_raw/concrete_texture_bg.webp') no-repeat center center;
-  background-size: cover;
-  opacity: 0.12;
-  mix-blend-mode: overlay;
-  pointer-events: none;
-  z-index: 2;
+  display: none !important;
 }
 
 /* Designer Celestial Sphere Horizon */
@@ -443,23 +424,25 @@ body, body.desktop-view {
   background: radial-gradient(circle, rgba(255, 88, 0, 0.25) 0%, rgba(67, 106, 238, 0.2) 45%, transparent 75%);
   filter: blur(80px);
   pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 90%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 90%);
   z-index: 2;
 }
 
 .hero-celestial-sphere {
   position: absolute;
-  bottom: -40vh;
+  bottom: -32vh;
   left: 50%;
   transform: translateX(-50%);
   width: 150vw;
-  height: 80vh;
+  height: 72vh;
   border-radius: 50%;
   background: radial-gradient(ellipse at 50% 12%, #000068 0%, #000018 45%, #000000 85%);
   box-shadow: 0 -2px 60px rgba(255, 88, 0, 0.7), inset 0 30px 90px rgba(0, 0, 255, 0.5);
   pointer-events: none;
   z-index: 3;
-  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 80%);
-  mask-image: linear-gradient(to bottom, black 50%, transparent 80%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 35%, transparent 52%);
+  mask-image: linear-gradient(to bottom, black 0%, black 35%, transparent 52%);
 }
 
 /* Designer Center Lens Flare */
@@ -673,17 +656,18 @@ body, body.desktop-view {
 .about-wave-horizontal {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 48%;
   transform: translate(-50%, -50%);
   width: 125vw;
   max-width: none;
-  height: auto;
+  height: 520px;
+  object-fit: cover;
   pointer-events: none;
   z-index: 1;
   opacity: 0.45;
   filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.5));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
 .about-grid {
@@ -1370,17 +1354,18 @@ body, body.desktop-view {
 .stages-glass-chain-horizontal {
   position: absolute;
   left: 50%;
-  top: 52%;
+  top: 75%;
   transform: translate(-50%, -50%);
   width: 125vw;
   max-width: none;
-  height: auto;
+  height: 440px;
+  object-fit: cover;
   pointer-events: none;
   z-index: 1;
   opacity: 0.65;
   filter: drop-shadow(0 0 50px rgba(67, 106, 238, 0.45));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
 .stages-timeline-row {
@@ -2411,8 +2396,20 @@ body, body.desktop-view {
     position: relative;
     width: 100%;
     max-width: 100vw;
-    overflow-x: clip;
-    overflow-y: visible;
+  }
+  .desktop-experience::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/figma_raw/concrete_texture_bg.webp') repeat top center;
+    background-size: 1920px auto;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 1;
   }
 }
 
