@@ -105,10 +105,16 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-desktop-sample')?.addEventListener('click', () => openModal('sample'));
   document.getElementById('btn-desktop-presentation')?.addEventListener('click', () => openModal('presentation'));
 
-  // Bind Mobile Hotspots & Buttons
-  document.getElementById('btn-m-open-theses')?.addEventListener('click', () => openModal('theses'));
-  document.getElementById('btn-m-open-sample')?.addEventListener('click', () => openModal('sample'));
-  document.getElementById('btn-m-open-presentation')?.addEventListener('click', () => openModal('presentation'));
+  // Bind Mobile Hotspots & Buttons (UA & EN)
+  document.querySelectorAll('#btn-m-open-theses, [data-modal="theses"]').forEach(el => {
+    el.addEventListener('click', () => openModal('theses'));
+  });
+  document.querySelectorAll('#btn-m-open-sample, [data-modal="sample"]').forEach(el => {
+    el.addEventListener('click', () => openModal('sample'));
+  });
+  document.querySelectorAll('#btn-m-open-presentation, [data-modal="presentation"]').forEach(el => {
+    el.addEventListener('click', () => openModal('presentation'));
+  });
   document.getElementById('btn-nav-register')?.addEventListener('click', (e) => {
     e.preventDefault();
     openModal('register');

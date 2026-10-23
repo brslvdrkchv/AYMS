@@ -590,6 +590,22 @@ const I18n = {
       btn.setAttribute('aria-pressed', isMatch ? 'true' : 'false');
     });
 
+    // Seamlessly swap 1:1 Figma graphic sections for mobile
+    const sec1 = document.querySelector('#m-hero .section-bg');
+    const sec2 = document.querySelector('#m-about .section-bg');
+    const sec3 = document.querySelector('#m-organizers .section-bg');
+    if (sec1 && sec2 && sec3) {
+      if (lang === 'en') {
+        sec1.src = 'images/figma_sections_en/sec_1_hero.webp';
+        sec2.src = 'images/figma_sections_en/sec_2_about.webp';
+        sec3.src = 'images/figma_sections_en/sec_3_organizers.webp';
+      } else {
+        sec1.src = 'images/figma_sections/sec_1_hero.webp';
+        sec2.src = 'images/figma_sections/sec_2_about.webp';
+        sec3.src = 'images/figma_sections/sec_3_organizers.webp';
+      }
+    }
+
     const modalContainer = document.getElementById('modal-container');
     if (modalContainer && modalContainer.classList.contains('active') && modalContainer.dataset.activeType) {
       const activeType = modalContainer.dataset.activeType;
