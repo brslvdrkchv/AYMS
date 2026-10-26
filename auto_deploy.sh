@@ -31,8 +31,8 @@ if [ -n "$LOCAL" ] && [ -n "$REMOTE" ] && [ "$LOCAL" != "$REMOTE" ]; then
     echo "Local:  $LOCAL"
     echo "Remote: $REMOTE"
 
-    # Pull clean latest changes
-    git pull origin "$BRANCH"
+    # Pull clean latest changes without conflict
+    git reset --hard "origin/$BRANCH"
 
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] ✅ AYMS Conf 2026 successfully updated!"
     echo "=========================================================="
