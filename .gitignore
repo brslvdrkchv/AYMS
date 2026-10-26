@@ -5,3 +5,4 @@ Thumbs.db
 
 # Agent local files
 .agents/
+.firebase/
