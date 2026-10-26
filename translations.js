@@ -346,17 +346,13 @@ const MODAL_TRANSLATIONS = {
           <li><strong>Робочі мови:</strong> українська або англійська (усі дистанційні секції проходять англійською мовою).</li>
           <li><strong>Академічна доброчесність та ШІ:</strong> використання генеративного ШІ допускається виключно як допоміжний інструмент для корекції стилю чи перекладу тексту за умови обов'язкового декларування у роботі. Генерація первинних наукових даних, аналізу чи висновків за допомогою ШІ суворо заборонена.</li>
         </ul>
-        <h4>2. Обов'язкова структура тез (для оригінальних досліджень):</h4>
+        <h4>2. Обов'язкова структура тез:</h4>
         <ul>
           <li><strong>Вступ</strong> — актуальність дослідження, невирішені аспекти проблеми.</li>
           <li><strong>Мета дослідження</strong> — чітке формулювання наукової мети.</li>
           <li><strong>Матеріали та методи</strong> — критерії відбору, обсяг вибірки, статистичні методи.</li>
           <li><strong>Результати</strong> — власні отримані дані з числовими та статистичними показниками (p-value, 95% ДІ).</li>
           <li><strong>Висновки</strong> — чіткі відповіді на поставлену мету без голослівних тверджень.</li>
-        </ul>
-        <h4>3. Клінічні випадки (Clinical Case Reports):</h4>
-        <ul>
-          <li>Вступ, Опис клінічного випадку, Обговорення та практична цінність, Висновки.</li>
         </ul>
         <p style="font-size: 13px; color: #9CA3AF; margin-top: 14px;">* Усі тези будуть опубліковані у фаховому виданні МОН України — «Український науково-медичний молодіжний журнал».</p>
       `
@@ -415,9 +411,9 @@ const MODAL_TRANSLATIONS = {
           <li>Сповіщення про результати відбору та статус доповіді — <strong>до 15 листопада 2026 року</strong>.</li>
         </ul>
         <div style="margin-top: 24px; text-align: center;">
-          <button type="button" class="figma-gradient-btn" style="padding: 14px 32px; font-size: 15px;" onclick="alert('Реєстраційна форма буде відкрита за регламентом конференції. Слідкуйте за новинами в @aymsconf!');">
+          <a href="https://forms.gle/s4RWVTCcSPa8X2YD9" target="_blank" rel="noopener noreferrer" class="figma-gradient-btn" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 14px 32px; font-size: 15px; color: #FFFFFF; border-radius: 9999px; font-weight: 600;">
             Перейти до реєстраційної форми
-          </button>
+          </a>
         </div>
       `
     }
@@ -434,17 +430,13 @@ const MODAL_TRANSLATIONS = {
           <li><strong>Working Languages:</strong> Ukrainian or English (all online sessions are conducted in English).</li>
           <li><strong>Academic Integrity & AI Policy:</strong> generative AI is permitted strictly as an auxiliary tool for style editing or translation, subject to mandatory declaration in the paper. Generating primary scientific data, analysis, or conclusions using AI is strictly prohibited.</li>
         </ul>
-        <h4>2. Mandatory Abstract Structure (Original Research):</h4>
+        <h4>2. Mandatory Abstract Structure:</h4>
         <ul>
           <li><strong>Background / Introduction</strong> — clinical or scientific relevance, unresolved aspects.</li>
           <li><strong>Objective</strong> — clear statement of the research goal.</li>
           <li><strong>Materials and Methods</strong> — inclusion criteria, sample size, study design, statistical methods.</li>
           <li><strong>Results</strong> — original findings with quantitative and statistical metrics (p-value, 95% CI).</li>
           <li><strong>Conclusions</strong> — concise evidence-based conclusions directly addressing the objective.</li>
-        </ul>
-        <h4>3. Clinical Case Reports:</h4>
-        <ul>
-          <li>Introduction, Case Presentation, Discussion & Clinical Value, Conclusions.</li>
         </ul>
         <p style="font-size: 13px; color: #9CA3AF; margin-top: 14px;">* All accepted abstracts will be published in the specialized journal of the Ministry of Education and Science of Ukraine — "Ukrainian Scientific Medical Youth Journal".</p>
       `
@@ -503,9 +495,9 @@ const MODAL_TRANSLATIONS = {
           <li>Notification of selection results and presentation status: <strong>by November 15, 2026</strong>.</li>
         </ul>
         <div style="margin-top: 24px; text-align: center;">
-          <button type="button" class="figma-gradient-btn" style="padding: 14px 32px; font-size: 15px;" onclick="alert('The registration form will open according to the conference schedule. Follow updates on @aymsconf!');">
+          <a href="https://forms.gle/s4RWVTCcSPa8X2YD9" target="_blank" rel="noopener noreferrer" class="figma-gradient-btn" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 14px 32px; font-size: 15px; color: #FFFFFF; border-radius: 9999px; font-weight: 600;">
             Proceed to Registration Form
-          </button>
+          </a>
         </div>
       `
     }
