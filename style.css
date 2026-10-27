@@ -3920,6 +3920,13 @@ body[data-lang="en"] .mobile-en-view {
   height: 34.813%;
 }
 
+.footer-logo-overlay {
+  left: 12.222%;
+  top: 78.035%;
+  width: 33.981%;
+  height: auto;
+}
+
 /* --- Visually Hidden / Accessible Semantic Layer (SEO & Screen Readers) --- */
 .sr-only {
   position: absolute !important;
