@@ -57,7 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetId = this.getAttribute('href');
       if (targetId === '#' || !targetId) return;
 
-      const targetEl = document.querySelector(targetId);
+      const candidates = document.querySelectorAll(targetId);
+      let targetEl = null;
+      for (const el of candidates) {
+        if (el.offsetParent !== null || el.getClientRects().length > 0) {
+          targetEl = el;
+          break;
+        }
+      }
+      if (!targetEl && candidates.length > 0) targetEl = candidates[0];
+
       if (targetEl) {
         e.preventDefault();
         desktopNav?.classList.remove('nav-open');
@@ -95,32 +104,37 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
-  // Bind Buttons
-  document.getElementById('nav-btn-register')?.addEventListener('click', () => openModal('register'));
-  document.getElementById('hero-btn-register')?.addEventListener('click', () => openModal('register'));
-  document.getElementById('banner-btn-register')?.addEventListener('click', () => openModal('register'));
-  document.getElementById('footer-btn-register')?.addEventListener('click', () => openModal('register'));
+  // Bind Registration Buttons across Desktop and Mobile (UA & EN)
+  document.querySelectorAll('#nav-btn-register, #hero-btn-register, #banner-btn-register, #footer-btn-register, #btn-nav-register, .m-nav-register, [data-modal="register"]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal('register');
+    });
+  });
 
-  document.getElementById('btn-desktop-theses')?.addEventListener('click', () => openModal('theses'));
-  document.getElementById('btn-desktop-sample')?.addEventListener('click', () => openModal('sample'));
-  document.getElementById('btn-desktop-presentation')?.addEventListener('click', () => openModal('presentation'));
+  // Bind Guidelines, Sample, and Presentation Modals
+  document.querySelectorAll('#btn-desktop-theses, #btn-m-open-theses, [data-modal="theses"]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal('theses');
+    });
+  });
+  document.querySelectorAll('#btn-desktop-sample, #btn-m-open-sample, [data-modal="sample"]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal('sample');
+    });
+  });
+  document.querySelectorAll('#btn-desktop-presentation, #btn-m-open-presentation, [data-modal="presentation"]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal('presentation');
+    });
+  });
 
-  // Bind Mobile Hotspots & Buttons (UA & EN)
-  document.querySelectorAll('#btn-m-open-theses, [data-modal="theses"]').forEach(el => {
-    el.addEventListener('click', () => openModal('theses'));
+  document.querySelectorAll('#btn-back-to-top, #btn-m-back-to-top').forEach(el => {
+    el.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   });
-  document.querySelectorAll('#btn-m-open-sample, [data-modal="sample"]').forEach(el => {
-    el.addEventListener('click', () => openModal('sample'));
-  });
-  document.querySelectorAll('#btn-m-open-presentation, [data-modal="presentation"]').forEach(el => {
-    el.addEventListener('click', () => openModal('presentation'));
-  });
-  document.getElementById('btn-nav-register')?.addEventListener('click', (e) => {
-    e.preventDefault();
-    openModal('register');
-  });
-  document.getElementById('btn-back-to-top')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  document.getElementById('btn-m-back-to-top')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
   modalClose?.addEventListener('click', closeModal);
   modalConfirmBtn?.addEventListener('click', closeModal);

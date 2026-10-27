@@ -3,6 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function() {
+      var p = window.location.pathname;
+      if (p && !p.endsWith('/') && !p.split('/').pop().includes('.')) {
+        var base = document.createElement('base');
+        base.href = p + '/';
+        document.head.appendChild(base);
+        window.location.replace(p + '/' + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
   <title>AYMS Conf 2026 — Annual Young Medical Scientists’ Conference</title>
   <meta name="description" content="Офіційний сайт Annual Young Medical Scientists’ Conference 2026. 185-річчя НМУ імені О.О. Богомольця та 145-річчя СНТ імені О.А. Киселя. 26–27 листопада 2026 року, Київ.">
   <link rel="icon" type="image/svg+xml" href="images/figma_raw/vector_41_223.svg">
@@ -169,6 +180,18 @@
           <a href="https://t.me/areskaro" target="_blank" rel="noopener noreferrer" class="hotspot hotspot-footer-tg-admin" title="Telegram: @areskaro" aria-label="Telegram: @areskaro"></a>
           <a href="https://t.me/aymsconf" target="_blank" rel="noopener noreferrer" class="hotspot hotspot-footer-tg-channel" title="Telegram-канал: @aymsconf" aria-label="Telegram-канал: @aymsconf"></a>
         </div>
+        <div class="m-ua-partner-bar">
+          <div class="m-ua-partner-title" data-i18n="footer_partner_title">Стати партнером</div>
+          <div class="m-ua-partner-links">
+            <a href="mailto:snt@nmu.ua" class="m-ua-partner-link">
+              <span data-i18n="footer_partner_email_lbl">Email:</span> snt@nmu.ua
+            </a>
+            <span class="m-ua-partner-sep">|</span>
+            <a href="https://t.me/areskaro" target="_blank" rel="noopener noreferrer" class="m-ua-partner-link">
+              <span data-i18n="footer_partner_tg_lbl">Telegram:</span> @areskaro
+            </a>
+          </div>
+        </div>
         <div class="sr-only">
           <h2>Безпековий протокол</h2>
           <p>Усі локації проведення конференції забезпечені укриттями цивільного захисту. У разі оголошення сигналу «Повітряна тривога» засідання та майстер-класи призупиняються, а учасники організовано переходять до укриттів, де (за технічної можливості) робота секцій продовжується. Безпека кожного делегата є нашим безумовним пріоритетом.</p>
@@ -187,17 +210,17 @@
 <div class="mobile-en-view">
 <main class="m-designer-container">
       <!-- 1. HERO SECTION (1:1 sec_1_hero) -->
-      <header id="m-hero" class="m-sec m-sec-hero">
-        <nav class="m-top-navbar" aria-label="Головне меню">
-          <a href="#m-hero" class="m-nav-logo" aria-label="AYMS">
+      <header id="m-en-hero" class="m-sec m-sec-hero">
+        <nav class="m-top-navbar" aria-label="Main menu">
+          <a href="#m-en-hero" class="m-nav-logo" aria-label="AYMS">
             <img src="images/figma_raw/vector_41_223.svg" alt="AYMS" width="84" height="26">
           </a>
           <div class="m-nav-links">
-            <a href="#m-about" class="m-nav-item" data-i18n="nav_about">Про захід</a>
-            <a href="#m-sections" class="m-nav-item" data-i18n="nav_sections">Секції</a>
-            <a href="#m-stages" class="m-nav-item" data-i18n="nav_stages">Регламент</a>
+            <a href="#m-en-about" class="m-nav-item" data-i18n="nav_about">About</a>
+            <a href="#m-en-sections" class="m-nav-item" data-i18n="nav_sections">Tracks</a>
+            <a href="#m-en-stages" class="m-nav-item" data-i18n="nav_stages">Timeline</a>
           </div>
-          <a href="#register" class="m-nav-register" id="btn-nav-register" data-i18n="nav_register">Зареєструватися</a>
+          <button type="button" class="m-nav-register" data-modal="register" data-i18n="nav_register">Register</button>
         </nav>
 
         <div class="m-hero-stage">
@@ -231,7 +254,7 @@
       </header>
 
       <!-- 2. ABOUT SECTION (1:1 sec_2_about) -->
-      <section id="m-about" class="m-sec m-sec-about">
+      <section id="m-en-about" class="m-sec m-sec-about">
         <!-- 3D Blue Ribbon Wave on Left (Exact Figma Node 34:267) -->
         <img src="images/figma_raw/blue_wave_ribbon_1.webp" alt="" class="m-about-wave" aria-hidden="true">
         <!-- Gradient Fade Mask (Exact Figma Node 34:269 Rectangle 314) -->
@@ -265,7 +288,7 @@
       </section>
 
       <!-- 3. ORGANIZERS SECTION (1:1 sec_3_organizers) -->
-      <section id="m-organizers" class="m-sec m-sec-organizers">
+      <section id="m-en-organizers" class="m-sec m-sec-organizers">
         <div class="m-org-blue-glow" aria-hidden="true"></div>
         <img src="images/figma_raw/wave_ribbon_2.webp" alt="" class="m-org-wave" aria-hidden="true">
         <div class="m-org-wave-fade" aria-hidden="true"></div>
@@ -305,19 +328,29 @@
       </section>
 
       <!-- 4. WHY JOIN & BONUSES SECTION (1:1 sec_4_why_join — White Arch) -->
-      <section id="m-why-join" class="m-sec m-sec-white-arch">
+      <section id="m-en-why-join" class="m-sec m-sec-white-arch">
         <div class="m-white-arch-inner">
           <h2 class="m-why-heading falcon-title" data-i18n="why_title">ЧОМУ ВАРТО СТАТИ ЧАСТИНОЮ AYMS CONF 2026?</h2>
 
-          <div class="m-stages-layout">
-            <div class="m-stages-digits-col">
-              <img src="images/figma_raw/digits_1_to_5.svg" alt="" class="m-digits-stack-img" aria-hidden="true">
-            </div>
-            <div class="m-stages-text-col">
+          <div class="m-reasons-list">
+            <div class="m-reason-row">
+              <img src="images/figma_raw/why_digit_1.svg" alt="1" class="m-reason-digit">
               <p class="m-why-text" data-i18n-html="why_1_html"><strong>Високий академічний рівень:</strong> ми кажемо «ні» псевдонауці – приймаються виключно оригінальні експериментальні та обсерваційні дослідження з суворим дотриманням стандартів академічної доброчесності;</p>
+            </div>
+            <div class="m-reason-row">
+              <img src="images/figma_raw/why_digit_2.svg" alt="2" class="m-reason-digit">
               <p class="m-why-text" data-i18n-html="why_2_html"><strong>Фахова публікація:</strong> усі тези будуть опубліковані у фаховому виданні МОН України – «Український науково-медичний молодіжний журнал»;</p>
+            </div>
+            <div class="m-reason-row">
+              <img src="images/figma_raw/why_digit_3.svg" alt="3" class="m-reason-digit">
               <p class="m-why-text" data-i18n-html="why_3_html"><strong>Міжнародна інтеграція:</strong> усі дистанційні секції проходять англійською мовою, залучаючи молодих науковців, які перебувають за кордоном, та міжнародних рецензентів (за домовленістю);</p>
+            </div>
+            <div class="m-reason-row">
+              <img src="images/figma_raw/why_digit_4.svg" alt="4" class="m-reason-digit">
               <p class="m-why-text" data-i18n-html="why_4_html"><strong>Практична користь:</strong> для очних учасників відкрито доступ до серії авторських практичних майстер-класів і клінічних воркшопів на сучасних симуляційних та лабораторних базах університету;</p>
+            </div>
+            <div class="m-reason-row">
+              <img src="images/figma_raw/why_digit_5.svg" alt="5" class="m-reason-digit">
               <p class="m-why-text" data-i18n-html="why_5_html"><strong>Спільнота однодумців:</strong> знайомство з провідними експертами, майбутніми колегами та потенційними науковими керівниками з усієї країни.</p>
             </div>
           </div>
@@ -349,7 +382,7 @@
         </div>
 
         <!-- 5. KEY FACTS & 6. SECTIONS (1:1 sec_5_key_facts & sec_6_sections — Dark Arch) -->
-        <div id="m-key-facts" class="m-dark-arch-block">
+        <div id="m-en-key-facts" class="m-dark-arch-block">
           <div class="m-facts-blue-beam" aria-hidden="true"></div>
 
           <h2 class="m-sec-title-white falcon-title" data-i18n="facts_title">КЛЮЧОВІ ФАКТИ ПОДІЇ</h2>
@@ -390,7 +423,7 @@
           </div>
 
           <!-- 6. SCIENTIFIC SECTIONS (1:1 sec_6_sections) -->
-          <div id="m-sections" class="m-sections-block">
+          <div id="m-en-sections" class="m-sections-block">
             <div class="m-sections-sphere-arc" aria-hidden="true"></div>
             <h2 class="m-sec-title-white falcon-title" data-i18n="sections_title">НАПРЯМИ РОБОТИ ТА СЕКЦІЇ</h2>
 
@@ -429,24 +462,28 @@
       </section>
 
       <!-- 7. STAGES, EVALUATION CRITERIA & IMPORTANT LINKS (1:1 sec_7_stages) -->
-      <section id="m-stages" class="m-sec m-sec-white-arch m-sec-stages-arch">
+      <section id="m-en-stages" class="m-sec m-sec-white-arch m-sec-stages-arch">
         <div class="m-white-arch-inner m-stages-white-inner">
           <img src="images/figma_raw/wave_ribbon_2.webp" alt="" class="m-stages-faint-wave" aria-hidden="true">
           <div class="m-stages-wave-fade" aria-hidden="true"></div>
 
           <h2 class="m-why-heading falcon-title" data-i18n="stages_title">РЕГЛАМЕНТ ТА ЕТАПИ ВІДБОРУ</h2>
 
-          <div class="m-stages-layout m-stages-reglament-layout">
-            <div class="m-stages-digits-col m-stages-4-col">
-              <img src="images/figma_raw/why_digit_1.svg" alt="1" class="m-digit-stack-single">
-              <img src="images/figma_raw/why_digit_2.svg" alt="2" class="m-digit-stack-single">
-              <img src="images/figma_raw/why_digit_3.svg" alt="3" class="m-digit-stack-single">
-              <img src="images/figma_raw/why_digit_4.svg" alt="4" class="m-digit-stack-single">
-            </div>
-            <div class="m-stages-text-col">
+          <div class="m-stages-list">
+            <div class="m-stage-row">
+              <img src="images/figma_raw/why_digit_1.svg" alt="1" class="m-stage-digit">
               <p class="m-why-text" data-i18n-html="stage_1_html"><strong>Етап І. Реєстрація та технічна експертиза.</strong> Подання тез і матеріалів, первинна перевірка оргкомітетом та антиплагіатний комплаєнс. Використання генеративного ШІ допускається виключно як допоміжний інструмент для корекції стилю чи перекладу тексту за умови обов'язкового декларування у роботі. Генерація первинних наукових даних, аналізу чи висновків за допомогою ШІ суворо заборонена. Подані матеріали проходять обов’язковий комплаєнс-контроль.</p>
+            </div>
+            <div class="m-stage-row">
+              <img src="images/figma_raw/why_digit_2.svg" alt="2" class="m-stage-digit">
               <p class="m-why-text" data-i18n-html="stage_2_html"><strong>Етап ІІ. Публічний науковий захист.</strong> Виступ із доповіддю на засіданні секції (7 хвилин на виступ + 2 хвилини на запитання авторитетного журі).</p>
+            </div>
+            <div class="m-stage-row">
+              <img src="images/figma_raw/why_digit_3.svg" alt="3" class="m-stage-digit">
               <p class="m-why-text" data-i18n-html="stage_3_html"><strong>Етап ІІІ. Фінал та відзначення переможців.</strong> Визначення найкращих досліджень у кожній секції за об'єктивними критеріями оцінювання, урочисте нагородження дипломами й цінними подарунками.</p>
+            </div>
+            <div class="m-stage-row">
+              <img src="images/figma_raw/why_digit_4.svg" alt="4" class="m-stage-digit">
               <p class="m-why-text" data-i18n-html="stage_4_html"><strong>Етап ІV. Публікація.</strong> Фахове рецензування тез та випуск збірника матеріалів в «Українському науково-медичному молодіжному журналі».</p>
             </div>
           </div>
@@ -480,15 +517,15 @@
               <img src="images/figma_raw/blik_lens_flare.webp" alt="" class="m-chain-flare-img" aria-hidden="true">
 
               <div class="m-staggered-cards">
-                <button type="button" class="m-link-glass-card m-link-card-1" id="btn-m-open-theses">
+                <button type="button" class="m-link-glass-card m-link-card-1" data-modal="theses" id="btn-m-en-open-theses">
                   <span class="m-link-card-text" data-i18n-html="link_card_1_html">Вимоги до<br>оформлення тез</span>
                 </button>
 
-                <button type="button" class="m-link-glass-card m-link-card-2" id="btn-m-open-sample">
+                <button type="button" class="m-link-glass-card m-link-card-2" data-modal="sample" id="btn-m-en-open-sample">
                   <span class="m-link-card-text" data-i18n-html="link_card_2_html">Зразок<br>оформлення<br>роботи</span>
                 </button>
 
-                <button type="button" class="m-link-glass-card m-link-card-3" id="btn-m-open-presentation">
+                <button type="button" class="m-link-glass-card m-link-card-3" data-modal="presentation" id="btn-m-en-open-presentation">
                   <span class="m-link-card-text" data-i18n-html="link_card_3_html">Вимоги до<br>виступу й<br>слайдів</span>
                 </button>
               </div>
@@ -496,7 +533,7 @@
           </div>
 
           <!-- 8. SAFETY & LOGISTICS + FOOTER (1:1 sec_8_footer) -->
-          <footer id="m-footer" class="m-footer-block">
+          <footer id="m-en-footer" class="m-footer-block">
             <div class="m-safety-sphere-wrapper">
               <div class="m-safety-sphere-arc" aria-hidden="true"></div>
               <h2 class="m-sec-title-white falcon-title" data-i18n="safety_logistics_title">БЕЗПЕКА ТА ЛОГІСТИКА</h2>
@@ -516,9 +553,9 @@
               <div class="m-footer-nav-col">
                 <h3 class="m-footer-col-heading" data-i18n="footer_nav_title">Навігація</h3>
                 <ul class="m-footer-nav-list">
-                  <li><a href="#m-about" data-i18n="footer_nav_about">Про нас</a></li>
-                  <li><a href="#m-sections" data-i18n="footer_nav_sections">Секції</a></li>
-                  <li><a href="#m-stages" data-i18n="footer_nav_stages">Регламент</a></li>
+                  <li><a href="#m-en-about" data-i18n="footer_nav_about">Про нас</a></li>
+                  <li><a href="#m-en-sections" data-i18n="footer_nav_sections">Секції</a></li>
+                  <li><a href="#m-en-stages" data-i18n="footer_nav_stages">Регламент</a></li>
                 </ul>
               </div>
 
@@ -539,6 +576,18 @@
                 <div class="m-footer-contact-group">
                   <span class="m-contact-label" data-i18n="footer_tg_channel_lbl">Telegram-канал:</span>
                   <a href="https://t.me/aymsconf" target="_blank" rel="noopener noreferrer" class="m-contact-link">@aymsconf</a>
+                </div>
+              </div>
+
+              <div class="m-footer-partner-col">
+                <h3 class="m-footer-col-heading" data-i18n="footer_partner_title">Стати партнером</h3>
+                <div class="m-footer-contact-group">
+                  <span class="m-contact-label" data-i18n="footer_partner_email_lbl">Email:</span>
+                  <a href="mailto:snt@nmu.ua" class="m-contact-link">snt@nmu.ua</a>
+                </div>
+                <div class="m-footer-contact-group">
+                  <span class="m-contact-label" data-i18n="footer_partner_tg_lbl">Telegram:</span>
+                  <a href="https://t.me/areskaro" target="_blank" rel="noopener noreferrer" class="m-contact-link">@areskaro</a>
                 </div>
               </div>
             </div>
@@ -1108,6 +1157,21 @@
                   <li>
                     <span class="contact-lbl" data-i18n="footer_tg_channel_lbl">Telegram-канал:</span>
                     <a href="https://t.me/aymsconf" target="_blank" rel="noopener noreferrer" class="contact-val channel-val">@aymsconf</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-partner-col">
+                <h4 class="footer-col-title" data-i18n="footer_partner_title">Стати партнером</h4>
+                <p class="footer-partner-desc" data-i18n="footer_partner_desc">Запрошуємо організації та компанії до партнерства та підтримки талановитої молоді.</p>
+                <ul class="footer-contacts-list">
+                  <li>
+                    <span class="contact-lbl" data-i18n="footer_partner_email_lbl">Email для партнерів:</span>
+                    <a href="mailto:snt@nmu.ua" class="contact-val">snt@nmu.ua</a>
+                  </li>
+                  <li>
+                    <span class="contact-lbl" data-i18n="footer_partner_tg_lbl">Telegram зв'язок:</span>
+                    <a href="https://t.me/areskaro" target="_blank" rel="noopener noreferrer" class="contact-val">@areskaro</a>
                   </li>
                 </ul>
               </div>

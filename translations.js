@@ -161,6 +161,10 @@ const TRANSLATIONS = {
     footer_phone_lbl: "Номер:",
     footer_tg_lbl: "Telegram:",
     footer_tg_channel_lbl: "Telegram-канал:",
+    footer_partner_title: "Стати партнером",
+    footer_partner_desc: "Запрошуємо організації та компанії до партнерства та підтримки талановитої молоді.",
+    footer_partner_email_lbl: "Email для партнерів:",
+    footer_partner_tg_lbl: "Telegram зв'язок:",
     footer_join_title: "Участь у події",
     footer_join_desc: "Приєднуйтесь до головної медичної молодіжної події року.",
     footer_btn_register: "Зареєструватися",
@@ -325,6 +329,10 @@ const TRANSLATIONS = {
     footer_phone_lbl: "Phone:",
     footer_tg_lbl: "Telegram:",
     footer_tg_channel_lbl: "Telegram channel:",
+    footer_partner_title: "Become a Partner",
+    footer_partner_desc: "We invite companies and organizations to partner with us and support young scientists.",
+    footer_partner_email_lbl: "Partnership Email:",
+    footer_partner_tg_lbl: "Telegram contact:",
     footer_join_title: "Join the Event",
     footer_join_desc: "Join the premier medical youth scientific conference of the year.",
     footer_btn_register: "Register",
@@ -362,10 +370,10 @@ const MODAL_TRANSLATIONS = {
       content: `
         <p>Для швидкого оформлення роботи скористайтеся типовим шаблоном:</p>
         <div style="background: rgba(255,255,255,0.05); border-left: 3px solid #436AEE; padding: 18px; border-radius: 10px; margin: 16px 0; font-family: monospace; font-size: 13px; line-height: 1.6;">
-          <p style="color: #FFFFFF;"><strong>СУЧАСНІ ПІДХОДИ ДО ДІАГНОСТИКИ ГОСТРОГО КОРОНАРНОГО СИНДРОМУ У МОЛОДИХ ПАЦІЄНТІВ</strong></p>
-          <p style="margin-top: 8px; color: #91E0FD;">Іваненко О. В.<sup>1</sup>, Петренко М. І.<sup>2</sup></p>
-          <p style="color: #9CA3AF;">Науковий керівник: д.мед.н., проф. Сидоренко К. П.<sup>1</sup></p>
-          <p style="color: #6B7280; font-size: 12px; margin-top: 6px;">
+          <p style="color: #FFFFFF; font-weight: 700;">СУЧАСНІ ПІДХОДИ ДО ДІАГНОСТИКИ ГОСТРОГО КОРОНАРНОГО СИНДРОМУ У МОЛОДИХ ПАЦІЄНТІВ</p>
+          <p style="margin-top: 8px; color: #91E0FD; font-weight: 600;">Іваненко О. В.<sup>1</sup>, Петренко М. І.<sup>2</sup></p>
+          <p style="color: #E2E8F0; font-weight: 500; margin-top: 4px;">Науковий керівник: д.мед.н., проф. Сидоренко К. П.<sup>1</sup></p>
+          <p style="color: #CBD5E1; font-size: 13px; line-height: 1.5; margin-top: 8px;">
             <sup>1</sup> Кафедра внутрішньої медицини №1, Національний медичний університет імені О.О. Богомольця, м. Київ<br>
             <sup>2</sup> Студентське наукове товариство імені О.А. Киселя
           </p>
@@ -446,10 +454,10 @@ const MODAL_TRANSLATIONS = {
       content: `
         <p>Use the following standard layout when preparing your abstract:</p>
         <div style="background: rgba(255,255,255,0.05); border-left: 3px solid #436AEE; padding: 18px; border-radius: 10px; margin: 16px 0; font-family: monospace; font-size: 13px; line-height: 1.6;">
-          <p style="color: #FFFFFF;"><strong>MODERN DIAGNOSTIC STRATEGIES FOR ACUTE CORONARY SYNDROME IN YOUNG ADULTS</strong></p>
-          <p style="margin-top: 8px; color: #91E0FD;">Ivanenko O. V.<sup>1</sup>, Petrenko M. I.<sup>2</sup></p>
-          <p style="color: #9CA3AF;">Scientific Supervisor: MD, PhD, Prof. Sydorenko K. P.<sup>1</sup></p>
-          <p style="color: #6B7280; font-size: 12px; margin-top: 6px;">
+          <p style="color: #FFFFFF; font-weight: 700;">MODERN DIAGNOSTIC STRATEGIES FOR ACUTE CORONARY SYNDROME IN YOUNG ADULTS</p>
+          <p style="margin-top: 8px; color: #91E0FD; font-weight: 600;">Ivanenko O. V.<sup>1</sup>, Petrenko M. I.<sup>2</sup></p>
+          <p style="color: #E2E8F0; font-weight: 500; margin-top: 4px;">Scientific Supervisor: MD, PhD, Prof. Sydorenko K. P.<sup>1</sup></p>
+          <p style="color: #CBD5E1; font-size: 13px; line-height: 1.5; margin-top: 8px;">
             <sup>1</sup> Department of Internal Medicine No. 1, Bogomolets National Medical University, Kyiv, Ukraine<br>
             <sup>2</sup> O. A. Kysil Student Scientific Society
           </p>
