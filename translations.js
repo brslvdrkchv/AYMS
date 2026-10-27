@@ -596,13 +596,13 @@ const I18n = {
     const sec3 = document.querySelector('#m-organizers .section-bg');
     if (sec1 && sec2 && sec3) {
       if (lang === 'en') {
-        sec1.src = 'images/figma_sections_en/sec_1_hero.webp';
-        sec2.src = 'images/figma_sections_en/sec_2_about.webp';
-        sec3.src = 'images/figma_sections_en/sec_3_organizers.webp';
+        sec1.src = 'images/figma_sections_en/sec_1_hero.webp?v=20261028_01';
+        sec2.src = 'images/figma_sections_en/sec_2_about.webp?v=20261028_01';
+        sec3.src = 'images/figma_sections_en/sec_3_organizers.webp?v=20261028_01';
       } else {
-        sec1.src = 'images/figma_sections/sec_1_hero.webp';
-        sec2.src = 'images/figma_sections/sec_2_about.webp';
-        sec3.src = 'images/figma_sections/sec_3_organizers.webp';
+        sec1.src = 'images/figma_sections/sec_1_hero.webp?v=20261028_01';
+        sec2.src = 'images/figma_sections/sec_2_about.webp?v=20261028_01';
+        sec3.src = 'images/figma_sections/sec_3_organizers.webp?v=20261028_01';
       }
     }
 
