@@ -488,7 +488,7 @@ body, body.desktop-view {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('images/figma_raw/hero_smokey_atmosphere.webp?v=20261028_01') no-repeat center center;
+  background: url('images/figma_raw/hero_smokey_atmosphere.webp?v=20261028_02') no-repeat center center;
   background-size: cover;
   opacity: 0.30;
   mix-blend-mode: screen;
@@ -2664,7 +2664,7 @@ body, body.desktop-view {
     content: '';
     position: fixed;
     inset: 0;
-    background: url('images/figma_raw/concrete_texture_bg.webp?v=20261028_01') no-repeat center center;
+    background: url('images/figma_raw/concrete_texture_bg.webp?v=20261028_02') no-repeat center center;
     background-size: cover;
     opacity: 0.04;
     pointer-events: none;
@@ -3306,7 +3306,7 @@ body, body.desktop-view {
   width: 44.5%;
   background:
     linear-gradient(180deg, rgba(10, 14, 28, 0.78) 0%, rgba(4, 6, 14, 0.84) 100%),
-    url('images/figma_raw/concrete_texture_bg.webp?v=20261028_01') center/cover no-repeat;
+    url('images/figma_raw/concrete_texture_bg.webp?v=20261028_02') center/cover no-repeat;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: clamp(10px, 2.6vw, 22px);
   pointer-events: none;
