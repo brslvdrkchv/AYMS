@@ -3613,17 +3613,11 @@ body, body.desktop-view {
 .m-bottom-footer-grid {
   position: relative;
   z-index: 5;
-  padding: 4vw 6vw 16vw 6vw;
+  padding: 4vw 6vw 6vw 6vw;
   display: grid;
-  grid-template-columns: 30% 18% 26% 26%;
+  grid-template-columns: 32% 26% 42%;
   align-items: start;
   gap: 2vw;
-}
-
-.m-footer-partner-col {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2vw;
 }
 
 .m-footer-logo-col {
