@@ -163,6 +163,9 @@ const TRANSLATIONS = {
     footer_tg_channel_lbl: "Telegram-канал:",
     footer_partner_title: "Стати партнером",
     footer_partner_desc: "Запрошуємо організації та компанії до партнерства та підтримки талановитої молоді.",
+    footer_partner_coordinator_lbl: "Координатор:",
+    footer_partner_coordinator_val: "Вагін Богдан Олександрович",
+    footer_partner_phone_lbl: "Номер:",
     footer_partner_email_lbl: "Email для партнерів:",
     footer_partner_tg_lbl: "Telegram зв'язок:",
     footer_join_title: "Участь у події",
@@ -331,6 +334,9 @@ const TRANSLATIONS = {
     footer_tg_channel_lbl: "Telegram channel:",
     footer_partner_title: "Become a Partner",
     footer_partner_desc: "We invite companies and organizations to partner with us and support young scientists.",
+    footer_partner_coordinator_lbl: "Coordinator:",
+    footer_partner_coordinator_val: "Bohdan Vahin",
+    footer_partner_phone_lbl: "Phone:",
     footer_partner_email_lbl: "Partnership Email:",
     footer_partner_tg_lbl: "Telegram contact:",
     footer_join_title: "Join the Event",
@@ -596,13 +602,13 @@ const I18n = {
     const sec3 = document.querySelector('#m-organizers .section-bg');
     if (sec1 && sec2 && sec3) {
       if (lang === 'en') {
-        sec1.src = 'images/figma_sections_en/sec_1_hero.webp?v=20261028_02';
-        sec2.src = 'images/figma_sections_en/sec_2_about.webp?v=20261028_02';
-        sec3.src = 'images/figma_sections_en/sec_3_organizers.webp?v=20261028_02';
+        sec1.src = 'images/figma_sections_en/sec_1_hero.webp?v=20261030_01';
+        sec2.src = 'images/figma_sections_en/sec_2_about.webp?v=20261030_01';
+        sec3.src = 'images/figma_sections_en/sec_3_organizers.webp?v=20261030_01';
       } else {
-        sec1.src = 'images/figma_sections/sec_1_hero.webp?v=20261028_02';
-        sec2.src = 'images/figma_sections/sec_2_about.webp?v=20261028_02';
-        sec3.src = 'images/figma_sections/sec_3_organizers.webp?v=20261028_02';
+        sec1.src = 'images/figma_sections/sec_1_hero.webp?v=20261030_01';
+        sec2.src = 'images/figma_sections/sec_2_about.webp?v=20261030_01';
+        sec3.src = 'images/figma_sections/sec_3_organizers.webp?v=20261030_01';
       }
     }
 
