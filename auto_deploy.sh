@@ -34,6 +34,12 @@ if [ -n "$LOCAL" ] && [ -n "$REMOTE" ] && [ "$LOCAL" != "$REMOTE" ]; then
     # Pull clean latest changes without conflict
     git reset --hard "origin/$BRANCH"
 
+    # Configure Caddy security and domain settings if needed
+    if [ -f "$SCRIPT_DIR/configure_caddy.sh" ]; then
+        chmod +x "$SCRIPT_DIR/configure_caddy.sh"
+        "$SCRIPT_DIR/configure_caddy.sh" || true
+    fi
+
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] ✅ AYMS Conf 2026 successfully updated!"
     echo "=========================================================="
 fi
