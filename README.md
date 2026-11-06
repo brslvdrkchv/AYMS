@@ -1,6 +1,6 @@
-# AYMS Conf 2026 — Annual Young Medical Scientists' Conference
+# AYMS Conf 2026 — Annual Young Medical Scientific Conference
 
-Офіційний вебсайт щорічної конференції молодих вчених **Annual Young Medical Scientists’ Conference 2026 (AYMS Conf 2026)**.
+Офіційний вебсайт щорічної конференції молодих вчених **Annual Young Medical Scientific Conference 2026 (AYMS Conf 2026)**.
 
 Захід присвячений:
 - **185-річчю** Національного медичного університету імені О. О. Богомольця

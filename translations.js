@@ -5,8 +5,8 @@
 
 const TRANSLATIONS = {
   uk: {
-    page_title: "AYMS Conf 2026 — Annual Young Medical Scientists’ Conference",
-    page_description: "Офіційний сайт Annual Young Medical Scientists’ Conference 2026. 185-річчя НМУ імені О.О. Богомольця та 145-річчя СНТ імені О.А. Киселя. 26–27 листопада 2026 року, Київ.",
+    page_title: "AYMS Conf 2026 — Annual Young Medical Scientific Conference",
+    page_description: "Офіційний сайт Annual Young Medical Scientific Conference 2026. 185-річчя НМУ імені О.О. Богомольця та 145-річчя СНТ імені О.А. Киселя. 26–27 листопада 2026 року, Київ.",
 
     // Navigation
     nav_about: "Про захід",
@@ -30,7 +30,7 @@ const TRANSLATIONS = {
     // About
     about_tag: "// ПРО ЗАХІД",
     about_title: "Шановні колеги – студенти, лікарі-інтерни, аспіранти та молоді науковці!",
-    about_p1_html: "Справжня наука ніколи не починається з наукових ступенів чи формальних публікацій. Вона народжується біля ліжка пацієнта, у незручних клінічних запитаннях, біля лабораторного мікроскопа та в нічних годинах розрахунку статистичних моделей. Організаційний комітет <strong>Annual Young Medical Scientists’ Conference 2026</strong> радий вітати кожного, хто обирає не просто спостерігати за еволюцією медицини, а рухати її вперед своїми ідеями, експериментами й аналітикою.",
+    about_p1_html: "Справжня наука ніколи не починається з наукових ступенів чи формальних публікацій. Вона народжується біля ліжка пацієнта, у незручних клінічних запитаннях, біля лабораторного мікроскопа та в нічних годинах розрахунку статистичних моделей. Організаційний комітет <strong>Annual Young Medical Scientific Conference 2026</strong> радий вітати кожного, хто обирає не просто спостерігати за еволюцією медицини, а рухати її вперед своїми ідеями, експериментами й аналітикою.",
     about_p2_html: "Цьогорічний AYMSConf є особливою віхою, що поєднує глибоку історію з поглядом у майбутнє. Ми відзначаємо 185-річчя Національного медичного університету імені О. О. Богомольця та 145-річчя нашого Студентського наукового товариства. До того ж, рівно 90 років тому, у далекому 1936-му, Товариство вперше організувало студентську наукову конференцію, довівши, що голос молодого дослідника здатен звучати потужно й на рівних із визнаними вченими.",
     about_p3_html: "Сьогодні ми не просто продовжуємо майже столітню традицію — ми перезавантажуємо академічний простір під виклики сучасності. AYMSConf 2026 створений як відкрита платформа для тих, хто цінує доказову медицину, бездоганний дизайн досліджень, прозору наукову етику та чесну експертну дискусію без формалізму. Тут фундаментальна біомедицина зустрічається з практичною хірургією, терапією та новими технологіями, перетворюючи сміливі гіпотези на реальні клінічні рішення.",
     about_p4_html: "Запрошуємо студентів, інтернів, аспірантів та молодих науковців представити свої результати, знайти однодумців для спільних міждисциплінарних проєктів і заявити про себе на головній медичній молодіжній події року. <strong>До зустрічі на AYMSConf 2026!</strong>",
@@ -43,7 +43,7 @@ const TRANSLATIONS = {
     org_card1_desc: "Провідний заклад вищої медичної освіти України зі 185-річною історією. Осередок фундаментальних відкриттів, авторитетних клінічних шкіл та міжнародного співробітництва.",
     org_card1_tag: "Опорний заклад вищої освіти",
     org_card2_title: "Студентське наукове товариство імені О. А. Киселя",
-    org_card2_desc: "Одне з найстаріших наукових товариств Європи (145 років). Об'єднує понад 100 профільних наукових гуртків та формує культуру доказових досліджень.",
+    org_card2_desc: "Одне з найстаріших наукових товариств Європи (145 років). Об'єднує понад 70 профільних наукових гуртків та формує культуру доказових досліджень.",
     org_card2_tag: "Організатор конференції",
     org_card3_title: "Товариство молодих вчених, аспірантів і спеціалістів",
     org_card3_desc: "Платформа підтримки лікарів-інтернів, аспірантів та PhD-дослідників. Сприяє грантовій діяльності та інтеграції молодих вчених у світовий науковий простір.",
@@ -150,7 +150,7 @@ const TRANSLATIONS = {
     safety_b2_html: "Проживання та проїзд: витрати на проїзд та проживання покриваються учасниками самостійно або за рахунок сторони, що відряджає. За необхідності організаційний комітет надає інформаційну та координаційну підтримку щодо поселення іногородніх учасників у гуртожитках університету або партнерських закладах розміщення.",
     safety_b3_html: "За запитом учасників, чиї роботи прийнято до програми, організаційний комітет надсилає офіційні іменні листи-запрошення для оформлення відрядження за місцем навчання або роботи.",
 
-    footer_tagline_html: "Annual Young Medical Scientists’ Conference 2026.<br>Національний медичний університет імені О. О. Богомольця.",
+    footer_tagline_html: "Annual Young Medical Scientific Conference 2026.<br>Національний медичний університет імені О. О. Богомольця.",
     footer_anniversary: "185 років НМУ • 145 років СНТ • 90 років першій конференції",
     footer_nav_title: "Навігація",
     footer_nav_about: "Про нас",
@@ -176,8 +176,8 @@ const TRANSLATIONS = {
   },
 
   en: {
-    page_title: "AYMS Conf 2026 — Annual Young Medical Scientists’ Conference",
-    page_description: "Official website of the Annual Young Medical Scientists’ Conference 2026. 185th anniversary of Bogomolets NMU and 145th anniversary of O. A. Kysil SSS. November 26–27, 2026, Kyiv, Ukraine.",
+    page_title: "AYMS Conf 2026 — Annual Young Medical Scientific Conference",
+    page_description: "Official website of the Annual Young Medical Scientific Conference 2026. 185th anniversary of Bogomolets NMU and 145th anniversary of O. A. Kysil SSS. November 26–27, 2026, Kyiv, Ukraine.",
 
     // Navigation
     nav_about: "About",
@@ -201,7 +201,7 @@ const TRANSLATIONS = {
     // About
     about_tag: "// ABOUT EVENT",
     about_title: "Dear colleagues – students, medical interns, PhD candidates, and young scientists!",
-    about_p1_html: "True science never begins with academic degrees or formal publications. It is born at the patient bedside, in challenging clinical questions, by the laboratory microscope, and in late-night hours of statistical modeling. The Organizing Committee of the <strong>Annual Young Medical Scientists’ Conference 2026</strong> is pleased to welcome everyone who chooses not merely to observe the evolution of medicine, but to drive it forward with their ideas, experiments, and analytics.",
+    about_p1_html: "True science never begins with academic degrees or formal publications. It is born at the patient bedside, in challenging clinical questions, by the laboratory microscope, and in late-night hours of statistical modeling. The Organizing Committee of the <strong>Annual Young Medical Scientific Conference 2026</strong> is pleased to welcome everyone who chooses not merely to observe the evolution of medicine, but to drive it forward with their ideas, experiments, and analytics.",
     about_p2_html: "This year's AYMSConf is a special milestone uniting deep history with a forward-looking vision. We celebrate the 185th anniversary of Bogomolets National Medical University and the 145th anniversary of our Student Scientific Society. Moreover, exactly 90 years ago, back in 1936, the Society organized its first student scientific conference, proving that the voice of a young researcher can resonate powerfully as an equal alongside renowned scholars.",
     about_p3_html: "Today, we are not just continuing a nearly century-old tradition — we are rebooting the academic space for modern challenges. AYMSConf 2026 is created as an open platform for those who value evidence-based medicine, impeccable study design, transparent research ethics, and honest expert discussion without formalism. Here, fundamental biomedicine meets practical surgery, therapy, and emerging technologies, turning bold hypotheses into real clinical solutions.",
     about_p4_html: "We invite students, interns, postgraduate students, and young scientists to present their findings, find like-minded peers for joint interdisciplinary projects, and make their mark at the premier youth medical event of the year. <strong>See you at AYMSConf 2026!</strong>",
@@ -214,7 +214,7 @@ const TRANSLATIONS = {
     org_card1_desc: "Ukraine's leading higher medical education institution with a 185-year legacy. A center for fundamental discoveries, renowned clinical schools, and global academic partnerships.",
     org_card1_tag: "Flagship Medical University",
     org_card2_title: "O. A. Kysil Student Scientific Society",
-    org_card2_desc: "One of Europe's oldest scientific societies (145 years). Uniting over 100 clinical & scientific clubs, fostering a culture of rigorous evidence-based research.",
+    org_card2_desc: "One of Europe's oldest scientific societies (145 years). Uniting over 70 clinical & scientific clubs, fostering a culture of rigorous evidence-based research.",
     org_card2_tag: "Conference Organizer",
     org_card3_title: "Society of Young Scientists, Postgraduate Students and Specialists",
     org_card3_desc: "Platform supporting medical interns, postgraduate students, and PhD fellows. Empowering grant opportunities and integration into the global research landscape.",
@@ -321,7 +321,7 @@ const TRANSLATIONS = {
     safety_b2_html: "Accommodation & travel: travel and accommodation expenses are covered by participants independently or by their sending institution. If needed, the Organizing Committee provides informational and coordination support for accommodating out-of-town participants in university dormitories or partner lodging facilities.",
     safety_b3_html: "Upon request of participants whose papers are accepted into the program, the Organizing Committee sends official personalized invitation letters for arranging academic or business travel at their place of study or work.",
 
-    footer_tagline_html: "Annual Young Medical Scientists’ Conference 2026.<br>Bogomolets National Medical University.",
+    footer_tagline_html: "Annual Young Medical Scientific Conference 2026.<br>Bogomolets National Medical University.",
     footer_anniversary: "185 Years of NMU • 145 Years of SNT • 90 Years Since First Conference",
     footer_nav_title: "Navigation",
     footer_nav_about: "About Us",
@@ -355,7 +355,7 @@ const MODAL_TRANSLATIONS = {
         <p><strong>Шановні учасники та автори досліджень!</strong> Будь ласка, дотримуйтесь офіційних стандартів подання тез до «Українського науково-медичного молодіжного журналу» (AYMS Conf 2026):</p>
         <h4>1. Загальні технічні параметри:</h4>
         <ul>
-          <li><strong>Обсяг тез:</strong> до 1–2 сторінок друкованого тексту формату А4 (до 3500–4000 знаків з урахуванням пробілів).</li>
+          <li><strong>Обсяг тез:</strong> до 1–2 сторінок друкованого тексту формату А4 (до 3000 символів без пробілів).</li>
           <li><strong>Шрифт та параметри:</strong> Times New Roman, кегль 14 pt, міжрядковий інтервал 1.5, поля з усіх боків — по 20 мм.</li>
           <li><strong>Робочі мови:</strong> українська або англійська (усі дистанційні секції проходять англійською мовою).</li>
           <li><strong>Академічна доброчесність та ШІ:</strong> використання генеративного ШІ допускається виключно як допоміжний інструмент для корекції стилю чи перекладу тексту за умови обов'язкового декларування у роботі. Генерація первинних наукових даних, аналізу чи висновків за допомогою ШІ суворо заборонена.</li>
@@ -413,7 +413,7 @@ const MODAL_TRANSLATIONS = {
     register: {
       title: "Реєстрація на AYMS Conf 2026",
       content: `
-        <p><strong>Annual Young Medical Scientists’ Conference 2026</strong> чекає на ваші наукові відкриття!</p>
+        <p><strong>Annual Young Medical Scientific Conference 2026</strong> чекає на ваші наукові відкриття!</p>
         <div style="background: rgba(67,106,238,0.12); border: 1px solid rgba(145,224,253,0.35); border-radius: 12px; padding: 16px; margin: 16px 0;">
           <p style="color: #91E0FD; font-weight: 700; margin-bottom: 4px;">🎓 Безкоштовна участь для студентів</p>
           <p style="font-size: 13px; color: #E5E7EB;">Для всіх студентів участь у конференції є безкоштовною за умови проходження конкурсного відбору. Кінцевий термін подачі робіт — <strong>12 листопада 2026 року (23:59)</strong>.</p>
@@ -439,7 +439,7 @@ const MODAL_TRANSLATIONS = {
         <p><strong>Dear participants and research authors!</strong> Please follow the official standards for submitting abstracts to the "Ukrainian Scientific Medical Youth Journal" (AYMS Conf 2026):</p>
         <h4>1. General Technical Specifications:</h4>
         <ul>
-          <li><strong>Length:</strong> up to 1–2 A4 pages (up to 3,500–4,000 characters including spaces).</li>
+          <li><strong>Length:</strong> up to 1–2 A4 pages (up to 3,000 characters without spaces).</li>
           <li><strong>Typography & Layout:</strong> Times New Roman, 14 pt font size, 1.5 line spacing, 20 mm margins on all sides.</li>
           <li><strong>Working Languages:</strong> Ukrainian or English (all online sessions are conducted in English).</li>
           <li><strong>Academic Integrity & AI Policy:</strong> generative AI is permitted strictly as an auxiliary tool for style editing or translation, subject to mandatory declaration in the paper. Generating primary scientific data, analysis, or conclusions using AI is strictly prohibited.</li>
@@ -497,7 +497,7 @@ const MODAL_TRANSLATIONS = {
     register: {
       title: "Registration for AYMS Conf 2026",
       content: `
-        <p><strong>Annual Young Medical Scientists’ Conference 2026</strong> awaits your scientific discoveries!</p>
+        <p><strong>Annual Young Medical Scientific Conference 2026</strong> awaits your scientific discoveries!</p>
         <div style="background: rgba(67,106,238,0.12); border: 1px solid rgba(145,224,253,0.35); border-radius: 12px; padding: 16px; margin: 16px 0;">
           <p style="color: #91E0FD; font-weight: 700; margin-bottom: 4px;">🎓 Free Admission for Students</p>
           <p style="font-size: 13px; color: #E5E7EB;">Participation is free of charge for all undergraduate medical students upon passing peer-review selection. Submission deadline: <strong>November 12, 2026 (23:59)</strong>.</p>
@@ -602,13 +602,13 @@ const I18n = {
     const sec3 = document.querySelector('#m-organizers .section-bg');
     if (sec1 && sec2 && sec3) {
       if (lang === 'en') {
-        sec1.src = 'images/figma_sections_en/sec_1_hero.webp?v=20261105_01';
-        sec2.src = 'images/figma_sections_en/sec_2_about.webp?v=20261105_01';
-        sec3.src = 'images/figma_sections_en/sec_3_organizers.webp?v=20261105_01';
+        sec1.src = 'images/figma_sections_en/sec_1_hero.webp?v=20261106_01';
+        sec2.src = 'images/figma_sections_en/sec_2_about.webp?v=20261106_01';
+        sec3.src = 'images/figma_sections_en/sec_3_organizers.webp?v=20261106_01';
       } else {
-        sec1.src = 'images/figma_sections/sec_1_hero.webp?v=20261105_01';
-        sec2.src = 'images/figma_sections/sec_2_about.webp?v=20261105_01';
-        sec3.src = 'images/figma_sections/sec_3_organizers.webp?v=20261105_01';
+        sec1.src = 'images/figma_sections/sec_1_hero.webp?v=20261106_01';
+        sec2.src = 'images/figma_sections/sec_2_about.webp?v=20261106_01';
+        sec3.src = 'images/figma_sections/sec_3_organizers.webp?v=20261106_01';
       }
     }
 
