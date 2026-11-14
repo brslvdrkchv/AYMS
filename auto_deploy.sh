@@ -43,3 +43,12 @@ if [ -n "$LOCAL" ] && [ -n "$REMOTE" ] && [ "$LOCAL" != "$REMOTE" ]; then
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] ✅ AYMS Conf 2026 successfully updated!"
     echo "=========================================================="
 fi
+
+# Self-healing check: Ensure Caddy has active redirection rules loaded
+if ! curl -s "http://localhost:2019/config/" | grep -q "strip_path_prefix"; then
+    if [ -f "$SCRIPT_DIR/configure_caddy.sh" ]; then
+        chmod +x "$SCRIPT_DIR/configure_caddy.sh"
+        "$SCRIPT_DIR/configure_caddy.sh" || true
+    fi
+fi
+

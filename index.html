@@ -8,6 +8,11 @@
   <meta http-equiv="Expires" content="0">
   <script>
     (function() {
+      if (window.location.hostname === 'ussf.nmuofficial.com') {
+        var cleanPath = window.location.pathname.replace(/^\/ayms(\/|$)/, '/');
+        window.location.replace('https://ayms.nmuofficial.com' + cleanPath + window.location.search + window.location.hash);
+        return;
+      }
       var p = window.location.pathname;
       if (p && !p.endsWith('/') && !p.split('/').pop().includes('.')) {
         var base = document.createElement('base');
